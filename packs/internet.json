@@ -1,0 +1,370 @@
+{
+  "id": "internet",
+  "name": "Memes e internet",
+  "description": "Lo más viral de las redes sociales.",
+  "icon": "📱",
+  "category": "cultura-pop",
+  "background": "linear-gradient(135deg, #00b0ff, #651fff)",
+  "words": [
+    {
+      "text": "Selfie",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Emoji",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Meme",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Influencer",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Youtuber",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "TikTok",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Hashtag",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Like",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Wifi",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Contraseña",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Videollamada",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Stories",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Filtro",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Seguidores",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Sticker",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "GIF",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Streaming",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Podcast",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bloquear",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cancelar",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Trending topic",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Live",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Unboxing",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Challenge",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Clickbait",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Spoiler",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Fake news",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Hater",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Troll",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Captura de pantalla",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Doble check azul",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Visto sin responder",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Modo avión",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Batería baja",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Audio de WhatsApp",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Grupo de la familia",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Sticker de WhatsApp",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Gatito triste",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Rickroll",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Perrito Cheems",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ok boomer",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "POV",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Plot twist",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Red flag",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Ghosting",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "FOMO",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Cringe",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Delulu",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Rizz",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Aesthetic",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Sigma",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "NPC",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Skibidi",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Chad",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Brainrot",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Hilo de Twitter",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Copypasta",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Algoritmo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Inteligencia artificial",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Deepfake",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

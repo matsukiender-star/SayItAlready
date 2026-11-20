@@ -1,0 +1,370 @@
+{
+  "id": "videojuegos",
+  "name": "Videojuegos",
+  "description": "Consolas, gamers y personajes legendarios.",
+  "icon": "🎮",
+  "category": "entretenimiento",
+  "background": "linear-gradient(135deg, #00c853, #2962ff)",
+  "words": [
+    {
+      "text": "Mario Bros",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Minecraft",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Fortnite",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pac-Man",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Tetris",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Sonic",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pokémon",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "FIFA",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Call of Duty",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Roblox",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Among Us",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Angry Birds",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Candy Crush",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Free Fire",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "PlayStation",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Xbox",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Nintendo Switch",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Control",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Zelda",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "GTA",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Halo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Kirby",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Donkey Kong",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Street Fighter",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Mortal Kombat",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Crash Bandicoot",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Resident Evil",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "God of War",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "The Sims",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Animal Crossing",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "League of Legends",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Clash Royale",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Subway Surfers",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Fall Guys",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Lara Croft",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Master Chief",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Overwatch",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Valorant",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Rocket League",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Mario Kart",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "The Last of Us",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Red Dead Redemption",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Dark Souls",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Elden Ring",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Hollow Knight",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Cuphead",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Undertale",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Silent Hill",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Metroid",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Final Fantasy",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Kingdom Hearts",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Bioshock",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Portal",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Half-Life",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Stardew Valley",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Doom",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Baldur's Gate",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Hades",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Celeste",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Five Nights at Freddy's",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

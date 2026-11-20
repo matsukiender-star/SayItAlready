@@ -1,0 +1,430 @@
+{
+  "id": "mimica",
+  "name": "Mímica",
+  "description": "¡Prohibido hablar! Solo actuar.",
+  "icon": "🎭",
+  "category": "mimica",
+  "background": "linear-gradient(135deg, #00897b, #c0ca33)",
+  "words": [
+    {
+      "text": "Nadar",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bailar",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Dormir",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Comer",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Correr",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Llorar",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Reír",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Saltar",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cocinar",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Manejar",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Leer",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Escribir",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cantar",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bostezar",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Estornudar",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Aplaudir",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Abrazar",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Volar",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Lavarse los dientes",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Peinarse",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pescar",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Barrer",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Gritar",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Tomar una foto",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pintar",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Jugar boliche",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Hacer yoga",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Tejer",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ordeñar una vaca",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Patear un balón",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Andar en bicicleta",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Esquiar",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Montar a caballo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ponerse los zapatos",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Inflar un globo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cambiar un pañal",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Buscar las llaves",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Hacer malabares",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Lanzar una piedra",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Remar",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Tocar la puerta",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Hacer lagartijas",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Planchar",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Escalar",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Darse un baño",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Abrir un regalo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Hacer un pastel",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Subir escaleras",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Comer espagueti",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Tomar sopa caliente",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Desactivar una bomba",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Cortar una cebolla",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Ser una estatua",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Caminar en la luna",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Perder el autobús",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Pisar un chicle",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Tener hipo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Ver una película de terror",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Ganar la lotería",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Batear un jonrón",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Domar un león",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Pelear con un mosquito",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Atrapar una mosca",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Subir a una montaña rusa",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Hacer una entrevista de trabajo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Cambiar una llanta",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Lavar un perro",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Despertarse tarde",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Bailar la Macarena",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Hacer surf",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "id": "dichos",
+  "name": "Dichos y refranes",
+  "description": "Lo que siempre dice tu abuelita.",
+  "icon": "🗣️",
+  "category": "cultura-pop",
+  "background": "linear-gradient(135deg, #5d4037, #ffab40)",
+  "words": [
+    {
+      "text": "Más vale tarde que nunca",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Al mal tiempo, buena cara",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Camarón que se duerme se lo lleva la corriente",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Perro que ladra no muerde",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Ojos que no ven, corazón que no siente",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "El que madruga Dios lo ayuda",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "No hay mal que por bien no venga",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "De tal palo, tal astilla",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "En boca cerrada no entran moscas",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Más vale pájaro en mano que ciento volando",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "A caballo regalado no se le ve el colmillo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Dime con quién andas y te diré quién eres",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "El que es perico donde quiera es verde",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cría cuervos y te sacarán los ojos",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Árbol que crece torcido jamás su tronco endereza",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Al que no quiere caldo, se le dan dos tazas",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Más sabe el diablo por viejo que por diablo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "No por mucho madrugar amanece más temprano",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Agua que no has de beber, déjala correr",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Del plato a la boca se cae la sopa",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Hijo de tigre, pintito",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cada loco con su tema",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "El que con lobos anda a aullar se enseña",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Zapatero a tus zapatos",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "A palabras necias, oídos sordos",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Dios aprieta pero no ahorca",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "El hábito no hace al monje",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Quien siembra vientos recoge tempestades",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Genio y figura hasta la sepultura",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "A falta de pan, tortillas",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Candil de la calle, oscuridad de su casa",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Barriga llena, corazón contento",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Muerto el perro, se acabó la rabia",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "El que se fue a la villa perdió su silla",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

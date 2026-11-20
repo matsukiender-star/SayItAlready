@@ -1,0 +1,430 @@
+{
+  "id": "objetos",
+  "name": "Objetos de la casa",
+  "description": "Cosas que tienes a la mano todos los días.",
+  "icon": "🛋️",
+  "category": "clasicos",
+  "background": "linear-gradient(135deg, #b5651d, #f2a65a)",
+  "words": [
+    {
+      "text": "Silla",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Mesa",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cama",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Televisión",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Teléfono",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Lámpara",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Puerta",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Ventana",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Espejo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Reloj",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cuchara",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Tenedor",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Plato",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Vaso",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Almohada",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Sillón",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Refrigerador",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Escoba",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Llave",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Toalla",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Jabón",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Peine",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cepillo de dientes",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Tijeras",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Mochila",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Licuadora",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Microondas",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Lavadora",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Plancha",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Control remoto",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ventilador",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Tostadora",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Sartén",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cafetera",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cortina",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Alfombra",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cobija",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ropero",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Regadera",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Secadora de pelo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cargador",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Audífonos",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Basura",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Trapeador",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Florero",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cuadro",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Calendario",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Despertador",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Perchero",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Paraguas",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Destapacaños",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Abrelatas",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Exprimidor",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Rallador",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Colador",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Molcajete",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Tendedero",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Extintor",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Termostato",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Interfón",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Mosquitero",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Comal",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Batidora",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Báscula",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Enchufe",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Persiana",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Sacacorchos",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Embudo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Recogedor",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Taburete",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "id": "marcas",
+  "name": "Comida rápida y marcas",
+  "description": "Logos y marcas que todos reconocen.",
+  "icon": "🍔",
+  "category": "cultura-pop",
+  "background": "linear-gradient(135deg, #ff6f00, #c62828)",
+  "words": [
+    {
+      "text": "McDonald's",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Coca-Cola",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Nike",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Apple",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Google",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Burger King",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "KFC",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Starbucks",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pepsi",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Adidas",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Netflix",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "YouTube",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Disney",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Samsung",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Lego",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Barbie",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Oreo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Domino's",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Subway",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Amazon",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bimbo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Sabritas",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Gansito",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Takis",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Doritos",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Nutella",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Red Bull",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "OXXO",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Walmart",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Costco",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Puma",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Converse",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Instagram",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "TikTok",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "WhatsApp",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Spotify",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Uber",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Tesla",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ferrari",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Hello Kitty",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Chupa Chups",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Kinder Sorpresa",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Mazapán de la Rosa",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Jarritos",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Tajín",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Maruchan",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Little Caesars",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Taco Bell",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Pizza Hut",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Krispy Kreme",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "IKEA",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Zara",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Rolex",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Lamborghini",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Nintendo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "PlayStation",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Duolingo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Airbnb",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Mercado Libre",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Rappi",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

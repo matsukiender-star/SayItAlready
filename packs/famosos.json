@@ -1,0 +1,370 @@
+{
+  "id": "famosos",
+  "name": "Famosos",
+  "description": "Estrellas de cine, música, deporte e internet.",
+  "icon": "⭐",
+  "category": "cultura-pop",
+  "background": "linear-gradient(135deg, #f9a825, #d81b60)",
+  "words": [
+    {
+      "text": "Shakira",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Messi",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cristiano Ronaldo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Taylor Swift",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bad Bunny",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Michael Jackson",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Albert Einstein",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Frida Kahlo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Selena Gomez",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Will Smith",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Brad Pitt",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Beyoncé",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Lady Gaga",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Elon Musk",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Kim Kardashian",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Leonardo DiCaprio",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Rihanna",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Justin Bieber",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Ariana Grande",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Neymar",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Salma Hayek",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Eugenio Derbez",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Gael García",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Diego Luna",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Sofía Vergara",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Jennifer López",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ricky Martin",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Karol G",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Canelo Álvarez",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Checo Pérez",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Guillermo del Toro",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Thalía",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Paulina Rubio",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Maradona",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Pelé",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Usain Bolt",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Serena Williams",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Zendaya",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Tom Holland",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Dwayne Johnson",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Gabriel García Márquez",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Pablo Picasso",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Cantinflas",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Pedro Infante",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "María Félix",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Chespirito",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Octavio Paz",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Diego Rivera",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Celia Cruz",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Juan Gabriel",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Vicente Fernández",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Rosalía",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Pedro Pascal",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Ibai",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "AuronPlay",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Luisito Comunica",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Yuya",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Lionel Richie",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Mozart",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Leonardo da Vinci",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

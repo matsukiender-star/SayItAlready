@@ -1,0 +1,370 @@
+{
+  "id": "musica",
+  "name": "Música y cantantes",
+  "description": "Canta, baila o tararea... ¡sin decir el nombre!",
+  "icon": "🎤",
+  "category": "cultura-pop",
+  "background": "linear-gradient(135deg, #8e24aa, #00e5ff)",
+  "words": [
+    {
+      "text": "Despacito",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "La Macarena",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Shakira",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bad Bunny",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Reggaetón",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Mariachi",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Karaoke",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Concierto",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Rock",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Salsa",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cumbia",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Banda",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "DJ",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Rap",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bachata",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Ópera",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cantar en la regadera",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Micrófono",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Disco de oro",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Grammy",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Peso Pluma",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Karol G",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "J Balvin",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Maluma",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Daddy Yankee",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Luis Miguel",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Juanes",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Maná",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Soda Stereo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Café Tacvba",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "RBD",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ha*Ash",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Grupo Firme",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Los Ángeles Azules",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Marc Anthony",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Romeo Santos",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Rosalía",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Natalia Lafourcade",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Carlos Vives",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Feid",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Gustavo Cerati",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Los Bukis",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Selena Quintanilla",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Rocío Dúrcal",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "José José",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Camilo Sesto",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Héroes del Silencio",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Caifanes",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Molotov",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Aterciopelados",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Calle 13",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Bomba Estéreo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Mon Laferte",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Rubén Blades",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Juan Luis Guerra",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Celia Cruz",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Tango",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Bolero",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Corrido tumbado",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Merengue",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

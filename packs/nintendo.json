@@ -1,0 +1,370 @@
+{
+  "id": "nintendo",
+  "name": "Personajes Nintendo",
+  "description": "Del Reino Champiñón a Hyrule.",
+  "icon": "🍄",
+  "category": "entretenimiento",
+  "background": "linear-gradient(135deg, #e60012, #ff8f00)",
+  "words": [
+    {
+      "text": "Mario",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Luigi",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Princesa Peach",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bowser",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Yoshi",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Toad",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Donkey Kong",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Kirby",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Link",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Zelda",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pikachu",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Hongo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Estrella",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Moneda",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Tubería verde",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Diddy Kong",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Wario",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Goomba",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Concha azul",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Mario Kart",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Daisy",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Rosalina",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Bowser Jr.",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Koopa",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Boo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Waluigi",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Planta piraña",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Shy Guy",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Lakitu",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ganondorf",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Samus",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Fox McCloud",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ness",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Pit",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Villager",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Isabelle",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Inkling",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Olimar",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Captain Falcon",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Toadette",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Kamek",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Birdo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Dry Bones",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Chain Chomp",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Bob-omb",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Navi",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Epona",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Midna",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Tingle",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "King K. Rool",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Ridley",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Meta Knight",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Rey Dedede",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Marth",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Pauline",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Cappy",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Bullet Bill",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Thwomp",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Spiny",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Hammer Bro",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

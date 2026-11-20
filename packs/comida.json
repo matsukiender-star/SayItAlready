@@ -1,0 +1,430 @@
+{
+  "id": "comida",
+  "name": "Comida",
+  "description": "Platillos, frutas y antojitos para abrir el apetito.",
+  "icon": "🌮",
+  "category": "clasicos",
+  "background": "linear-gradient(135deg, #e53935, #ffb300)",
+  "words": [
+    {
+      "text": "Pizza",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Hamburguesa",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Taco",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Helado",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pastel",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Manzana",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Plátano",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Huevo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pan",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Queso",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Arroz",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Sopa",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pollo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Papas fritas",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Chocolate",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Leche",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Naranja",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Fresa",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Sandía",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Galleta",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Hot dog",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Palomitas",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Ensalada",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Uva",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Jugo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Enchiladas",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Quesadilla",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Tamal",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Pozole",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Guacamole",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Sushi",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Lasaña",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Espagueti",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Burrito",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Churros",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Empanada",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Arepa",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ceviche",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Hot cakes",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Elote",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Paleta",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Mango",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Piña",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Aguacate",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Sándwich",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Nachos",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Flan",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Gelatina",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Donas",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Brócoli",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Mole",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Chiles en nogada",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Paella",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Tiramisú",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Ramen",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Pan de muerto",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Cochinita pibil",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Chilaquiles",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Sopes",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Alfajor",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Gazpacho",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Fondue",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Croissant",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Tres leches",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Rosca de reyes",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Bacalao",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Huitlacoche",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Tlayuda",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Pupusa",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Dulce de leche",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

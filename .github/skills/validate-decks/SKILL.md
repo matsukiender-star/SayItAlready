@@ -12,6 +12,8 @@ argument-hint: 'Optionally specify a deck filename like "animals.json" to valida
 - Editing words or difficulty tags in a deck
 - Auditing all packs before a release
 
+Run `node scripts/validate-packs.mjs` first for the mechanical checks (schema, ids, duplicates, tags, packs/index.json). Packs are generated from `scripts/decks-src/*.mjs` with `npm run build:packs`: edit the sources, not the JSON.
+
 ## Procedure
 
 For each deck file in `packs/*.json`, run through all validation checks below in order. Report issues grouped by file, with a final summary.
@@ -34,6 +36,7 @@ Every deck file MUST have this exact top-level structure:
   "name": "string — display name",
   "description": "string — short tagline",
   "icon": "string — single emoji",
+  "category": "clasicos | entretenimiento | cultura-pop | mimica",
   "background": "string — CSS gradient",
   "words": [...]
 }
@@ -59,7 +62,7 @@ Validate:
 ### Step 3: Word Count & Balance
 
 - Report total word count and breakdown by difficulty level.
-- Flag if any difficulty level has fewer than 15 or more than 25 words.
+- Flag if any difficulty level has fewer than 10 or more than 30 words.
 - Flag if difficulty levels are significantly unbalanced (differ by more than 5).
 
 ### Step 4: Duplicate Detection
@@ -71,9 +74,9 @@ Validate:
 ### Step 5: Spelling & Formatting
 
 For each word entry:
-- Check spelling of common English words.
+- Check Spanish spelling, including accents (á, é, í, ó, ú, ñ) and opening marks (¡ ¿). Decks target Latin American Spanish.
 - For proper nouns (character names, place names, brand names), verify the canonical capitalization and punctuation (e.g., "Galentine's Day" not "Galentines Day").
-- Flag entries that look like sentence fragments or are unusually long (>40 characters) — long entries are harder in a timed party game.
+- Flag entries that look like sentence fragments or are unusually long (>40 characters) — long entries are harder in a timed party game. Exception: the `dichos` deck is made of full sayings on purpose.
 
 ### Step 6: Relevance to Theme
 

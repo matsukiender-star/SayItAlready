@@ -1,4 +1,5 @@
-const CACHE_NAME = 'sayitalready-v1.20.0';
+// Service worker de la versión web (PWA). En la app de Android no se registra.
+const CACHE_NAME = 'diloya-v2.0.0';
 
 const PRECACHE_URLS = [
   './',
@@ -9,12 +10,17 @@ const PRECACHE_URLS = [
   './css/home-screen.css',
   './css/game-screen.css',
   './css/round-summary.css',
+  './fonts/fonts.css',
+  './fonts/fredoka-latin-600-normal.woff2',
+  './fonts/fredoka-latin-700-normal.woff2',
+  './fonts/inter-latin-400-normal.woff2',
+  './fonts/inter-latin-600-normal.woff2',
+  './fonts/inter-latin-800-normal.woff2',
   './js/app.js',
   './js/game-app.js',
   './js/components/home-screen.js',
   './js/components/game-screen.js',
   './js/components/round-summary.js',
-  './js/components/deck-picker.js',
   './js/models/deck.js',
   './js/services/tilt-detector.js',
   './js/services/audio-manager.js',
@@ -23,33 +29,11 @@ const PRECACHE_URLS = [
   './js/services/settings.js',
   './js/services/install.js',
   './js/services/compress.js',
+  './js/services/native.js',
+  './js/services/confetti.js',
   './js/vendor/qrcode.js',
   './js/version.js',
-  './packs/animals.json',
-  './packs/movies.json',
-  './packs/food.json',
-  './packs/back-to-the-future.json',
-  './packs/parks-and-rec.json',
-  './packs/community.json',
-  './packs/science.json',
-  './packs/90s-nostalgia.json',
-  './packs/simpsons.json',
-  './packs/among-us.json',
-  './packs/dog-with-a-blog.json',
-  './packs/disney-parks.json',
-  './packs/fast-food.json',
-  './packs/brooklyn-99.json',
-  './packs/portal.json',
-  './packs/video-game-characters.json',
-  './packs/mario.json',
-  './packs/pokemon.json',
-  './packs/brands-and-logos.json',
-  './packs/tv-shows.json',
-  './packs/amphibia.json',
-  './packs/lilo-and-stitch.json',
-  './packs/roblox.json',
-  './packs/80s.json',
-  './packs/sanrio.json',
+  './packs/index.json',
   './icons/icon.svg',
   './icons/icon-nobg.svg',
   './icons/icon-192.png',
@@ -57,49 +41,57 @@ const PRECACHE_URLS = [
   './icons/icon-maskable-192.png',
   './icons/icon-maskable-512.png',
   './icons/icon-180.png',
-  './icons/icon-16.png',
-  './icons/icon-32.png',
-  './icons/og-image.png',
   './favicon.ico',
-  './icons/screenshots/home-screen.png',
-  './icons/screenshots/deck-modal.png',
 ];
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(PRECACHE_URLS))
-  );
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE_NAME);
+    await cache.addAll(PRECACHE_URLS);
+    // Los mazos se listan en packs/index.json
+    try {
+      const ids = await (await fetch('./packs/index.json')).json();
+      await cache.addAll(ids.map((id) => `./packs/${id}.json`));
+    } catch { /* se cachean al usarse */ }
+  })());
   self.skipWaiting();
 });
 
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
-      Promise.all(
-        keys
-          .filter((key) => key !== CACHE_NAME)
-          .map((key) => caches.delete(key))
-      )
+      Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)))
     )
   );
   self.clients.claim();
 });
 
+/** Una respuesta redirigida no puede usarse para una navegación: se copia limpia. */
+function clean(res) {
+  if (!res || !res.redirected) return res;
+  return res.blob().then((body) => new Response(body, {
+    status: res.status,
+    statusText: res.statusText,
+    headers: res.headers,
+  }));
+}
+
 self.addEventListener('fetch', (event) => {
-  // Skip cache for requests with cache=off (used for version checks)
   const url = new URL(event.request.url);
-  if (url.searchParams.get('cache') === 'off') {
-    return; // fall through to default browser fetch
-  }
-  // For navigation requests, strip query params so game.html?deck=X hits the cached game.html
-  if (event.request.mode === 'navigate') {
-    const stripped = new Request(url.origin + url.pathname, event.request);
-    event.respondWith(
-      caches.match(stripped).then((cached) => cached || fetch(event.request))
-    );
-    return;
-  }
+  if (event.request.method !== 'GET' || url.origin !== location.origin) return;
+  // Sin caché para la comprobación de versión
+  if (url.searchParams.get('cache') === 'off') return;
+  // Navegación: quitar parámetros para que game.html?deck=X use la copia en caché
+  const request = event.request.mode === 'navigate'
+    ? new Request(url.origin + url.pathname)
+    : event.request;
   event.respondWith(
-    caches.match(event.request).then((cached) => cached || fetch(event.request))
+    caches.match(request).then((cached) => (cached ? clean(cached) : fetch(event.request).then((res) => {
+      if (res.ok) {
+        const copy = res.clone();
+        caches.open(CACHE_NAME).then((c) => c.put(request, copy));
+      }
+      return res;
+    })))
   );
 });

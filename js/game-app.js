@@ -3,40 +3,34 @@ import './components/round-summary.js';
 import { loadAllDecks } from './services/deck-store.js';
 import { getSettings } from './services/settings.js';
 import { probeTiltAvailable } from './services/tilt-detector.js';
+import { isNative, lockLandscape, unlockOrientation, hideSplash } from './services/native.js';
 
 const app = document.getElementById('app');
+const HOME_URL = './index.html';
 
-/* ---- Read launch params ---- */
+/* ---- Parámetros de inicio ---- */
 const params = new URLSearchParams(location.search);
 const deckId = params.get('deck');
 const launchDifficulty = Number(params.get('difficulty') ?? 2);
 const tiltHint = params.get('tilt') === '1';
 
-/* ---- Game config (preserved across Play Again) ---- */
-let gameConfig = {
+/* ---- Configuración (se conserva en "Jugar otra vez") ---- */
+const gameConfig = {
   deck: null,
   difficulty: launchDifficulty,
   controlMode: getSettings().controlMode,
   tiltGranted: false,
 };
 
-/* ---- Orientation helpers ---- */
-function lockLandscape() {
-  try { screen.orientation?.lock('landscape').catch(() => {}); } catch {}
-}
-function unlockOrientation() {
-  try { screen.orientation?.unlock(); } catch {}
-}
-
-/* ---- Views ---- */
+/* ---- Vistas ---- */
 function showGame() {
   lockLandscape();
   app.innerHTML = '';
   const game = document.createElement('game-screen');
   game.deck = gameConfig.deck;
   game.duration = getSettings().timerDuration;
-  game.tiltGranted = gameConfig.tiltGranted;
   game.controlMode = gameConfig.controlMode;
+  game.tiltGranted = gameConfig.tiltGranted;
   game.difficulty = gameConfig.difficulty;
   app.appendChild(game);
 }
@@ -49,7 +43,12 @@ function showSummary(deck, results) {
   app.appendChild(summary);
 }
 
-/* ---- Event handlers ---- */
+function goHome() {
+  unlockOrientation();
+  location.replace(HOME_URL);
+}
+
+/* ---- Eventos ---- */
 app.addEventListener('round-end', (e) => {
   const { deck, results } = e.detail;
   history.replaceState({ view: 'results' }, '', location.pathname + location.search);
@@ -57,15 +56,11 @@ app.addEventListener('round-end', (e) => {
 });
 
 app.addEventListener('start-game', () => {
-  // "Play Again" from round-summary — reuse same config
   history.replaceState({ view: 'game' }, '', location.pathname + location.search);
   showGame();
 });
 
-app.addEventListener('go-home', () => {
-  unlockOrientation();
-  location.replace('./');
-});
+app.addEventListener('go-home', goHome);
 
 app.addEventListener('game-paused', () => {
   history.pushState({ view: 'game-paused' }, '');
@@ -75,57 +70,58 @@ app.addEventListener('game-resumed', () => {
   if (history.state?.view === 'game-paused') history.back();
 });
 
-/* ---- Back button ---- */
+/* ---- Botón atrás ---- */
 window.addEventListener('popstate', () => {
-  const state = history.state;
-  switch (state?.view) {
-    case 'game-paused': {
-      const game = app.querySelector('game-screen');
-      if (game) game.showPause();
+  switch (history.state?.view) {
+    case 'game-paused':
+      app.querySelector('game-screen')?.showPause();
       break;
-    }
     case 'game': {
       const game = app.querySelector('game-screen');
       if (game) game.hidePause();
       else showGame();
       break;
     }
-    default: {
-      // Back from game with no state → go home
-      unlockOrientation();
-      location.replace('./');
-    }
+    default:
+      goHome();
   }
 });
 
-/* ---- Boot ---- */
-(async () => {
-  if (!deckId) {
-    location.replace('./');
-    return;
-  }
+// En Android: "atrás" durante el juego pausa; en pausa o en el resumen vuelve al inicio.
+if (isNative()) {
+  const capApp = globalThis.Capacitor?.Plugins?.App;
+  capApp?.addListener?.('backButton', () => {
+    const game = app.querySelector('game-screen');
+    if (game && history.state?.view === 'game') game.showPause();
+    else goHome();
+  });
+  // Si la app pasa a segundo plano, se pausa la ronda
+  capApp?.addListener?.('pause', () => app.querySelector('game-screen')?.showPause());
+}
 
-  // Load deck
+/* ---- Arranque ---- */
+(async () => {
+  hideSplash();
+  if (!deckId) { goHome(); return; }
+
   const allDecks = await loadAllDecks();
-  const deck = allDecks.find(d => d.id === deckId || d.name === deckId);
-  if (!deck) {
-    location.replace('./');
-    return;
-  }
+  const deck = allDecks.find((d) => d.id === deckId || d.name === deckId);
+  if (!deck) { goHome(); return; }
   gameConfig.deck = deck;
 
-  // Verify tilt availability if hinted
-  if (gameConfig.controlMode === 'gyro' && tiltHint) {
-    gameConfig.tiltGranted = await probeTiltAvailable(1500);
+  if (gameConfig.controlMode === 'gyro') {
+    // En la app nativa no hace falta permiso: se comprueba directamente
+    gameConfig.tiltGranted = (tiltHint || isNative()) ? await probeTiltAvailable(1500) : false;
+    if (!gameConfig.tiltGranted) gameConfig.controlMode = 'touch'; // sin sensor → botones
   }
 
   history.replaceState({ view: 'game' }, '', location.pathname + location.search);
   showGame();
 })();
 
-/* ---- Service Worker registration ---- */
-if ('serviceWorker' in navigator) {
+/* ---- Service worker (solo versión web) ---- */
+if ('serviceWorker' in navigator && !isNative()) {
   navigator.serviceWorker.register('./sw.js').catch((err) => {
-    console.warn('SW registration failed:', err);
+    console.warn('No se pudo registrar el service worker:', err);
   });
 }

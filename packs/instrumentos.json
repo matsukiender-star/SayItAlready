@@ -1,0 +1,370 @@
+{
+  "id": "instrumentos",
+  "name": "Instrumentos musicales",
+  "description": "¡Tócalo con las manos imaginarias!",
+  "icon": "🎸",
+  "category": "clasicos",
+  "background": "linear-gradient(135deg, #6a1b9a, #ec407a)",
+  "words": [
+    {
+      "text": "Guitarra",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Piano",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Batería",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Violín",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Flauta",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Trompeta",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Tambor",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Micrófono",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Maracas",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Saxofón",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Arpa",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Guitarra eléctrica",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Teclado",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bajo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Xilófono",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pandero",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Armónica",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Silbato",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Platillos",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Campana",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Acordeón",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Violonchelo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Clarinete",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Trombón",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ukulele",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Marimba",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Bongós",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Güiro",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Tuba",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Gaita",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Triángulo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Castañuelas",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Contrabajo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Banjo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Sintetizador",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Guitarrón",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Charango",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cajón peruano",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Órgano",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Corneta",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Oboe",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Fagot",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Theremín",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Sitar",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Didgeridoo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Arpa de boca",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Cuatro venezolano",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Quena",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Zampoña",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Bandoneón",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Vihuela",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Clavecín",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Celesta",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Tabla hindú",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Steel drum",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Kalimba",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Ocarina",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Corno francés",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Requinto",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Teponaztli",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

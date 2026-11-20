@@ -1,0 +1,436 @@
+{
+  "id": "animales",
+  "name": "Animales",
+  "description": "¡Ruge, ladra o aletea para que lo adivinen!",
+  "icon": "🦁",
+  "category": "clasicos",
+  "background": "linear-gradient(135deg, #0f9b58, #2bd9a0)",
+  "words": [
+    {
+      "text": "Perro",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Gato",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "León",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Elefante",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Jirafa",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Caballo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Vaca",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cerdo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Gallina",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pato",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Conejo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Mono",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Tigre",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Oso",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pez",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Tiburón",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Serpiente",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Rana",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Mariposa",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Abeja",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Ratón",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Oveja",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Tortuga",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Delfín",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pájaro",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Burro",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pingüino",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Canguro",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cocodrilo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Hipopótamo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Rinoceronte",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cebra",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Koala",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Panda",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Búho",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Loro",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Pulpo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ballena",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Camello",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Murciélago",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ardilla",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Lobo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Zorro",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Águila",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Flamenco",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Caracol",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Araña",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Hormiga",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Jaguar",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Medusa",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cangrejo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ornitorrinco",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Ajolote",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Perezoso",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Mapache",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Armadillo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Camaleón",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Tucán",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Erizo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Narval",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Manatí",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Suricata",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Quetzal",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Tlacuache",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Iguana",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Alpaca",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Hiena",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Tapir",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Caballito de mar",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Mantarraya",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Colibrí",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

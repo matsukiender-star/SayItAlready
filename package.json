@@ -1,15 +1,35 @@
 {
-  "name": "sayitalready",
-  "version": "1.0.0",
-  "main": "sw.js",
+  "name": "dilo-ya",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "¡Dilo Ya! — juego de adivinar palabras con el teléfono en la frente (Android + PWA).",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fonts": "node scripts/copy-fonts.mjs",
+    "build:web": "node scripts/build-web.mjs",
+    "build:packs": "node scripts/decks-src/build-packs.mjs",
+    "validate": "node scripts/validate-packs.mjs",
+    "test": "node --test tests/*.test.mjs && node scripts/validate-packs.mjs",
+    "icons": "node scripts/generate-icons.mjs",
+    "serve": "npx serve www -l 3000",
+    "android:sync": "npm run build:web && npx cap sync android",
+    "android:open": "npx cap open android"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "dependencies": {
+    "@capacitor-community/keep-awake": "^8.0.1",
+    "@capacitor/android": "^8.6.2",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/core": "^8.6.2",
+    "@capacitor/haptics": "^8.0.2",
+    "@capacitor/screen-orientation": "^8.0.2",
+    "@capacitor/splash-screen": "^8.0.2",
+    "@capacitor/status-bar": "^8.0.4"
+  },
   "devDependencies": {
+    "@capacitor/cli": "^8.6.2",
+    "@fontsource/fredoka": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
     "png-to-ico": "^3.0.1",
     "sharp": "^0.34.5"
   }

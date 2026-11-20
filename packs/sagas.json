@@ -1,0 +1,370 @@
+{
+  "id": "sagas",
+  "name": "Sagas épicas",
+  "description": "Hogwarts, la Tierra Media y una galaxia muy, muy lejana.",
+  "icon": "🧙",
+  "category": "entretenimiento",
+  "background": "linear-gradient(135deg, #263238, #ffd54f)",
+  "words": [
+    {
+      "text": "Harry Potter",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Hermione",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Ron Weasley",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Voldemort",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Dumbledore",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Hogwarts",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Darth Vader",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Luke Skywalker",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Yoda",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Princesa Leia",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Sable de luz",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Frodo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Gandalf",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Gollum",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "El Anillo Único",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Chewbacca",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "R2-D2",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Hagrid",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Varita mágica",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Escoba voladora",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Snape",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Draco Malfoy",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Dobby",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Quidditch",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Sombrero Seleccionador",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Snitch dorada",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Han Solo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Obi-Wan Kenobi",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Stormtrooper",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Estrella de la Muerte",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Baby Yoda",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Aragorn",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Legolas",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Sauron",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Mordor",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Hobbit",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Sam Gamyi",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Katniss Everdeen",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Los Juegos del Hambre",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Crepúsculo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Horrocrux",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Patronus",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Bellatrix",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Sirius Black",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Profesora McGonagall",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Expecto Patronum",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Palpatine",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Kylo Ren",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Boba Fett",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Jedi",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Sith",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Halcón Milenario",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Saruman",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Bilbo Bolsón",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Rivendel",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Narnia",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Percy Jackson",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Divergente",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Maze Runner",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Bella Swan",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

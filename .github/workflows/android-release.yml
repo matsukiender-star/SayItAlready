@@ -1,0 +1,116 @@
+name: Android · Release
+
+# Compila el APK firmado y lo publica en GitHub Releases.
+# Se ejecuta al subir un tag v* (p. ej. v2.0.0) o a mano desde la pestaña Actions.
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: android-release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+          cache: gradle
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Pruebas y validación de mazos
+        run: npm test
+
+      - name: Copiar la web al proyecto Android
+        run: npm run android:sync
+
+      - name: Versión
+        id: version
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          if [ "${GITHUB_REF_TYPE}" = "tag" ]; then
+            echo "tag=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
+          else
+            echo "tag=v$VERSION" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Keystore de los secrets (opcional)
+        env:
+          KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+        run: |
+          if [ -n "$KEYSTORE_BASE64" ]; then
+            echo "$KEYSTORE_BASE64" | base64 -d > "$RUNNER_TEMP/release.jks"
+            echo "ANDROID_KEYSTORE_FILE=$RUNNER_TEMP/release.jks" >> "$GITHUB_ENV"
+            echo "Firmando con el keystore de los secrets."
+          else
+            echo "Sin secrets de firma: se usa android/keystore/dilo-ya-dev.jks."
+          fi
+
+      - name: Compilar APK
+        working-directory: android
+        env:
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleRelease --no-daemon --stacktrace
+
+      - name: Preparar archivo
+        id: apk
+        run: |
+          FILE="DiloYa-${{ steps.version.outputs.tag }}.apk"
+          cp android/app/build/outputs/apk/release/app-release.apk "$FILE"
+          sha256sum "$FILE" > "$FILE.sha256"
+          echo "file=$FILE" >> "$GITHUB_OUTPUT"
+
+      - name: Publicar release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          target_commitish: ${{ github.sha }}
+          name: ¡Dilo Ya! ${{ steps.version.outputs.tag }}
+          files: |
+            ${{ steps.apk.outputs.file }}
+            ${{ steps.apk.outputs.file }}.sha256
+          body: |
+            ## 📱 ¡Dilo Ya! ${{ steps.version.outputs.tag }}
+
+            El juego de adivinar palabras con el teléfono en la frente, ahora como app de Android.
+
+            ### Novedades
+            - App nativa de Android (Capacitor) que funciona sin internet.
+            - Giroscopio con calibración automática, sensibilidad ajustable y sin dobles conteos.
+            - 26 mazos en español con más de 1,600 palabras: películas, series, animales, objetos, comida, mímica, anime, superhéroes, dichos y más.
+            - Interfaz nueva con animaciones, confeti y resumen de cada ronda.
+            - Pantalla completa, vibración háptica y pantalla siempre encendida durante la partida.
+
+            ### Cómo instalar
+            1. Descarga **${{ steps.apk.outputs.file }}** desde los archivos de abajo, en tu teléfono Android.
+            2. Ábrelo. Si Android lo pide, permite «Instalar apps desconocidas» para tu navegador o el administrador de archivos.
+            3. ¡Listo! Busca **¡Dilo Ya!** entre tus apps.
+
+            Requiere Android 7.0 o superior.
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: DiloYa-apk
+          path: ${{ steps.apk.outputs.file }}

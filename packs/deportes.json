@@ -1,0 +1,424 @@
+{
+  "id": "deportes",
+  "name": "Deportes",
+  "description": "Goles, canastas, saques y medallas.",
+  "icon": "⚽",
+  "category": "clasicos",
+  "background": "linear-gradient(135deg, #2e7d32, #9ccc65)",
+  "words": [
+    {
+      "text": "Fútbol",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Básquetbol",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Béisbol",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Tenis",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Natación",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Box",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Ciclismo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Voleibol",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Correr",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Karate",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Golf",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Patinaje",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Surf",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Ajedrez",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Gol",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Balón",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Portero",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Árbitro",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Medalla",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Trofeo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Esquí",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Gimnasia",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Lucha libre",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Yoga",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Fútbol americano",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ping pong",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Hockey",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Rugby",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Bádminton",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Esgrima",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Clavados",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Remo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Escalada",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Maratón",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Taekwondo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Judo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Skateboard",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Boliche",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Atletismo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Equitación",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Paracaidismo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Snowboard",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Polo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Penal",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Tarjeta roja",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Mundial",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Olimpiadas",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Medio tiempo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Pádel",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Waterpolo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Lanzamiento de jabalina",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Salto con garrocha",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Curling",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Pentatlón",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Nado sincronizado",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Triatlón",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Charrería",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Tiro con arco",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Halterofilia",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Fuera de lugar",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Hat-trick",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Jonrón",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Triple doble",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Vuelta ciclista",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Frontón",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Lacrosse",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Bobsleigh",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Kitesurf",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Parkour",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

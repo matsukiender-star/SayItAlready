@@ -1,0 +1,430 @@
+{
+  "id": "paises-ciudades",
+  "name": "Países y ciudades",
+  "description": "Un viaje alrededor del mundo sin salir de la sala.",
+  "icon": "🌎",
+  "category": "clasicos",
+  "background": "linear-gradient(135deg, #00695c, #26c6da)",
+  "words": [
+    {
+      "text": "México",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Estados Unidos",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "España",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Brasil",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Argentina",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Japón",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "China",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Francia",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Italia",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Canadá",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Colombia",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Perú",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Chile",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Alemania",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Inglaterra",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Rusia",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Egipto",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "India",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cuba",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Australia",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "París",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Nueva York",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cancún",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Roma",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Londres",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Venezuela",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ecuador",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Uruguay",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Paraguay",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Bolivia",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Guatemala",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Costa Rica",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Puerto Rico",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Grecia",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Portugal",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Corea del Sur",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Holanda",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Suiza",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Turquía",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Marruecos",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Las Vegas",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Tokio",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Barcelona",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Buenos Aires",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Guadalajara",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Monterrey",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Bogotá",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Lima",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Madrid",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Río de Janeiro",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Islandia",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Noruega",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Nueva Zelanda",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Tailandia",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Vietnam",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Sudáfrica",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Kenia",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Mongolia",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Finlandia",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Croacia",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Dubái",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Machu Picchu",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Oaxaca",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Cartagena",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Montevideo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Estambul",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Praga",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Ámsterdam",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Singapur",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Patagonia",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

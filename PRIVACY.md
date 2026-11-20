@@ -1,32 +1,31 @@
-# Privacy
+# Privacidad
 
-**Say It Already!** is a fully client-side web app. Your privacy is straightforward:
+**¡Dilo Ya!** funciona completamente en tu dispositivo.
 
-## Data Storage
+## Datos que guarda
 
-All data stays on your device. The app uses:
+Todo se queda en tu teléfono o navegador:
 
-- **localStorage** — settings (control mode, timer, sound), play history, favorites, and the "How to Play seen" flag
-- **IndexedDB** — custom decks you create or import
+- **localStorage**: ajustes (controles, tiempo, sonido, sensibilidad), historial de mazos jugados, favoritos y si ya viste «Cómo jugar».
+- **IndexedDB**: los mazos que creas o importas.
 
-Nothing is sent to a server.
+No se envía nada a ningún servidor.
 
-## Network Requests
+## Conexiones
 
-The app makes **no analytics, tracking, or telemetry calls**. The only network activity is:
+La app no tiene analíticas, rastreo ni telemetría.
 
-- **Initial page load** — fetching the app files and built-in deck packs
-- **Version check** — on the settings screen, a single fetch to the hosted `version.js` to see if an update is available
-- **Service Worker caching** — precaches assets so the app works offline
+- **App de Android:** todos los archivos van dentro del APK, así que no necesita internet. El permiso de internet existe solo porque lo exige el motor web de Capacitor.
+- **Versión web:** descarga los archivos de la app y los mazos, los guarda en caché para usarse sin conexión y, en Ajustes, consulta `version.js` para saber si hay una actualización.
 
-## Third Parties
+## Sensores
 
-There are no third-party scripts, SDKs, cookies, or advertising.
+El giroscopio se lee solo durante la partida, para detectar la inclinación. Los datos no se guardan ni se envían.
 
-## QR Code Sharing
+## Terceros
 
-When you generate a QR code for a deck, the deck data is compressed and encoded directly into the URL. No data is uploaded — the recipient's browser decodes it locally.
+No hay scripts de terceros, SDK, cookies ni publicidad.
 
-## Contact
+## Compartir con código QR
 
-If you have questions, open an issue on the [GitHub repository](https://github.com/david-risney/SayItAlready).
+Al generar un QR, el mazo se comprime dentro del propio enlace. No se sube nada: el teléfono que lo abre lo decodifica localmente.

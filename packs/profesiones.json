@@ -1,0 +1,424 @@
+{
+  "id": "profesiones",
+  "name": "Profesiones",
+  "description": "¿A qué te dedicas? ¡Que lo adivinen!",
+  "icon": "👩‍⚕️",
+  "category": "clasicos",
+  "background": "linear-gradient(135deg, #1565c0, #42a5f5)",
+  "words": [
+    {
+      "text": "Doctor",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Maestro",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bombero",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Policía",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cocinero",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Piloto",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Payaso",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cantante",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Futbolista",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Dentista",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Enfermera",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Astronauta",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pintor",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Mesero",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Panadero",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Granjero",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cartero",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Veterinario",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Mago",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Actor",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Taxista",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Peluquero",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Vendedor",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bailarina",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Arquitecto",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Abogado",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Carpintero",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Plomero",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Electricista",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Mecánico",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Fotógrafo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Periodista",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Científico",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Juez",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Salvavidas",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Jardinero",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ingeniero",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Programador",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Detective",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Psicólogo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Escritor",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Locutor",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Sastre",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Barbero",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Albañil",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cajero",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Repartidor",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Guardia",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Entrenador",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Arqueólogo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Astrónomo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Notario",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Cirujano",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Paleontólogo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Diseñador gráfico",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Contador",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Traductor",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Influencer",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Sommelier",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Biólogo marino",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Controlador aéreo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Cerrajero",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Apicultor",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Relojero",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Taxidermista",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Escultor",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Meteorólogo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Diplomático",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Agente de bienes raíces",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

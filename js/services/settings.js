@@ -1,10 +1,11 @@
-const SETTINGS_KEY = 'sayitalready-settings';
+const SETTINGS_KEY = 'diloya-settings';
 
 const DEFAULTS = {
   soundEnabled: true,
   vibrationEnabled: true,
-  controlMode: 'gyro', // 'gyro' | 'touch' | 'swipe'
-  timerDuration: 60,    // seconds: 30 | 60 | 90 | 120
+  controlMode: 'gyro',     // 'gyro' | 'touch' | 'swipe'
+  timerDuration: 60,       // segundos: 30 | 60 | 90 | 120
+  tiltSensitivity: 'media', // 'baja' | 'media' | 'alta'
   debugOverlay: false,
 };
 
@@ -24,5 +25,5 @@ export function updateSettings(partial) {
   const s = getSettings();
   Object.assign(s, partial);
   cache = s;
-  localStorage.setItem(SETTINGS_KEY, JSON.stringify(s));
+  try { localStorage.setItem(SETTINGS_KEY, JSON.stringify(s)); } catch { /* sin almacenamiento */ }
 }

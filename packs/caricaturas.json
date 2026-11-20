@@ -1,0 +1,400 @@
+{
+  "id": "caricaturas",
+  "name": "Caricaturas",
+  "description": "Personajes y series animadas de toda la vida.",
+  "icon": "🐭",
+  "category": "entretenimiento",
+  "background": "linear-gradient(135deg, #fbc02d, #ff7043)",
+  "words": [
+    {
+      "text": "Mickey Mouse",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bob Esponja",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Patricio",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Homero Simpson",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bart Simpson",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Scooby-Doo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bugs Bunny",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pato Donald",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Goofy",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pikachu",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Garfield",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Tom y Jerry",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Piolín",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pantera Rosa",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pedro Picapiedra",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Calamardo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pepa Pig",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bluey",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Dora la exploradora",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Snoopy",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Correcaminos",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Coyote",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Taz",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Pato Lucas",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Popeye",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Don Gato",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Johnny Bravo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Las Chicas Superpoderosas",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Dexter",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Coraje el perro cobarde",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Finn y Jake",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ben 10",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Kim Possible",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Jimmy Neutrón",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Los Padrinos Mágicos",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Rugrats",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Hey Arnold",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Doug",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ed, Edd y Eddy",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Gumball",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Steven Universe",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Los Thornberrys",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Danny Phantom",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Avatar Aang",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Hello Kitty",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Invasor Zim",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Billy y Mandy",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Mansión Foster",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "KND",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "La vaca y el pollito",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Soy la comadreja",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Samurai Jack",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Gravity Falls",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Hora de aventura",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Rick y Morty",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Bojack Horseman",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Los Supersónicos",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "El Chavo animado",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Animaniacs",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Pinky y Cerebro",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Las aventuras de Tintín",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Mafalda",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Condorito",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Memín",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Kalimán",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "id": "transportes",
+  "name": "Transportes",
+  "description": "Ruedas, alas, velas y cohetes.",
+  "icon": "🚀",
+  "category": "clasicos",
+  "background": "linear-gradient(135deg, #37474f, #ff7043)",
+  "words": [
+    {
+      "text": "Coche",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Avión",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Barco",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bicicleta",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Moto",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Tren",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Autobús",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Camión",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Helicóptero",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Taxi",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cohete",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Patineta",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Ambulancia",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Patrulla",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Submarino",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Metro",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Tractor",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Velero",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Globo aerostático",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Carreola",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Camión de bomberos",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Lancha",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Yate",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Teleférico",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Tranvía",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Monopatín eléctrico",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cuatrimoto",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Grúa",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Limusina",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Camioneta",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Crucero",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Jet ski",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Avioneta",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Trailer",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Motoneta",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Kayak",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Carruaje",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Patines",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Planeador",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Canoa",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Dirigible",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Hovercraft",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Funicular",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Trajinera",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Rickshaw",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Góndola",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Transbordador espacial",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Aerodeslizador",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Monorriel",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Tren bala",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Zepelín",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Catamarán",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Ala delta",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Segway",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Bicitaxi",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Balsa",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Montacargas",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Retroexcavadora",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Batiscafo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Parapente",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

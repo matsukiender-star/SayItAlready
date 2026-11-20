@@ -1,5 +1,6 @@
 import './components/home-screen.js';
 import { decompressFromBase64 } from './services/compress.js';
+import { isNative, bindBackButton, hideSplash, unlockOrientation } from './services/native.js';
 
 const app = document.getElementById('app');
 let routing = false; // true while handling popstate, suppresses URL side-effects
@@ -32,7 +33,7 @@ function getViewParams() {
 function redirectToGame(deckId) {
   if (!deckId) return false;
   const params = new URLSearchParams({ deck: deckId });
-  location.replace(`game?${params}`);
+  location.replace(`game.html?${params}`);
   return true;
 }
 
@@ -120,12 +121,18 @@ window.addEventListener('popstate', async () => {
 /* ---- PWA install prompt ---- */
 import './services/install.js';
 
-/* ---- Service Worker registration ---- */
-if ('serviceWorker' in navigator) {
+/* ---- Service worker (solo versión web) ---- */
+if ('serviceWorker' in navigator && !isNative()) {
   navigator.serviceWorker.register('./sw.js').catch((err) => {
-    console.warn('SW registration failed:', err);
+    console.warn('No se pudo registrar el service worker:', err);
   });
 }
+
+/* ---- Android: botón atrás y pantalla de inicio ---- */
+// En la vista principal sin diálogos abiertos, "atrás" sale de la app.
+bindBackButton({ isRoot: () => !history.state || history.state.view === 'main' || !new URLSearchParams(location.search).get('view') });
+hideSplash();
+unlockOrientation();
 
 /* ---- Boot from URL ---- */
 (async () => {

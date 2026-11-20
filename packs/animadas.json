@@ -1,0 +1,430 @@
+{
+  "id": "animadas",
+  "name": "Pelis animadas",
+  "description": "Disney, Pixar, DreamWorks y más magia animada.",
+  "icon": "🧸",
+  "category": "entretenimiento",
+  "background": "linear-gradient(135deg, #1e88e5, #ab47bc)",
+  "words": [
+    {
+      "text": "Toy Story",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Frozen",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Coco",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Shrek",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Moana",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cars",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Up",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Monsters Inc.",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Aladdín",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "La Sirenita",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cenicienta",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Blancanieves",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bambi",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Dumbo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pinocho",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Madagascar",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "La Era de Hielo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Ratatouille",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Intensamente",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Mulán",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Tarzán",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Hércules",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Zootopia",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Minions",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bob Esponja: La película",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Enredados",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Valiente",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Wall-E",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Bichos",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Los Increíbles",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Lilo y Stitch",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "La Bella y la Bestia",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "101 Dálmatas",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "El Libro de la Selva",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Pocahontas",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Shrek 2",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cómo entrenar a tu dragón",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Kung Fu Panda",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Rio",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Hotel Transylvania",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ralph el demoledor",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Grandes héroes",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Luca",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Red",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Soul",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Elementos",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Sing",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Gato con botas",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Spider-Man: Un nuevo universo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Wish",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "El viaje de Chihiro",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Mi vecino Totoro",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "El castillo vagabundo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "El jorobado de Notre Dame",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Atlantis",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Las locuras del emperador",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Planeta del tesoro",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Bolt",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Anastasia",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "El gigante de hierro",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "El príncipe de Egipto",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Kubo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Los mitchells contra las máquinas",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Klaus",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Pinocho de Guillermo del Toro",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "La leyenda de la Nahuala",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "El libro de la vida",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Robot salvaje",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Flow",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "La princesa y el sapo",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

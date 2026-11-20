@@ -1,4 +1,4 @@
-const DB_NAME = 'SayItAlreadyDB';
+const DB_NAME = 'DiloYaDB';
 const DB_VERSION = 1;
 const STORE_NAME = 'decks';
 
@@ -54,9 +54,16 @@ async function fetchBuiltInPack(name) {
   return res.json();
 }
 
+/** List of built-in pack ids, from packs/index.json. */
+async function fetchBuiltInIndex() {
+  const res = await fetch('./packs/index.json');
+  if (!res.ok) throw new Error('Pack index not found');
+  return res.json();
+}
+
 /** Load all available decks — built-in + custom. */
 export async function loadAllDecks() {
-  const builtInNames = ['animals', 'movies', 'food', 'back-to-the-future', 'parks-and-rec', 'community', 'science', '90s-nostalgia', 'simpsons', 'among-us', 'dog-with-a-blog', 'disney-parks', 'fast-food', 'brooklyn-99', 'portal', 'video-game-characters', 'mario', 'pokemon', 'brands-and-logos', 'tv-shows', 'amphibia', 'lilo-and-stitch', 'roblox', '80s', 'sanrio'];
+  const builtInNames = await fetchBuiltInIndex().catch(() => []);
   const [builtIn, custom] = await Promise.all([
     Promise.all(builtInNames.map((n) => fetchBuiltInPack(n).catch(() => null))).then((r) =>
       r.filter(Boolean)
@@ -66,7 +73,7 @@ export async function loadAllDecks() {
   return [...builtIn, ...custom];
 }
 
-const HISTORY_KEY = 'sayitalready-play-history';
+const HISTORY_KEY = 'diloya-play-history';
 
 /** Get play history as { deckId: timestamp } map. */
 export function getPlayHistory() {
@@ -100,7 +107,7 @@ export function sortDecksByRecency(decks) {
 }
 
 /* ---- Favorites ---- */
-const FAVORITES_KEY = 'sayitalready-favorites';
+const FAVORITES_KEY = 'diloya-favorites';
 
 /** Get set of favorite deck IDs. */
 export function getFavorites() {

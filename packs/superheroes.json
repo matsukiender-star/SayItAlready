@@ -1,0 +1,400 @@
+{
+  "id": "superheroes",
+  "name": "Superhéroes y villanos",
+  "description": "Capas, poderes y planes malvados.",
+  "icon": "🦸",
+  "category": "entretenimiento",
+  "background": "linear-gradient(135deg, #d32f2f, #1a237e)",
+  "words": [
+    {
+      "text": "Superman",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Batman",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Spider-Man",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Hulk",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Iron Man",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Capitán América",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Thor",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Mujer Maravilla",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Flash",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Wolverine",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Joker",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Thanos",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Aquaman",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Black Panther",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Viuda Negra",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Robin",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Deadpool",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Venom",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Catwoman",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Groot",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Doctor Strange",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ant-Man",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Capitana Marvel",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ojo de Halcón",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Bruja Escarlata",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Visión",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Loki",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Linterna Verde",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cyborg",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Harley Quinn",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Pingüino",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Lex Luthor",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Magneto",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Profesor X",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Tormenta",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cíclope",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Star-Lord",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Gamora",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Rocket",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Duende Verde",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Doctor Octopus",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Shazam",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Batichica",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Supergirl",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Spider-Gwen",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Bane",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Acertijo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Dos Caras",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Espantapájaros",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Ultrón",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Kang",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Galactus",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Silver Surfer",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Daredevil",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Punisher",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Moon Knight",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Ms. Marvel",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Darkseid",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Brainiac",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Deathstroke",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Mística",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Gambito",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Juggernaut",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Shang-Chi",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Doctor Doom",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "id": "cuerpo",
+  "name": "Partes del cuerpo",
+  "description": "Señala, toca... ¡pero no digas la palabra!",
+  "icon": "🫀",
+  "category": "clasicos",
+  "background": "linear-gradient(135deg, #c2185b, #ff8a80)",
+  "words": [
+    {
+      "text": "Mano",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pie",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Ojo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Nariz",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Boca",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Oreja",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cabeza",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pelo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Diente",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Lengua",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Dedo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Rodilla",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Codo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Hombro",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Espalda",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Panza",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Cuello",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Uña",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pierna",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Brazo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Ceja",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Pestaña",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Tobillo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Muñeca",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cadera",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Corazón",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cerebro",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Pulmón",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ombligo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Talón",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Mejilla",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Barbilla",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Frente",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Nuca",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Labios",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Costilla",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Esqueleto",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Músculo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Estómago",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Garganta",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Clavícula",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Hígado",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Riñón",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Páncreas",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Tímpano",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Pantorrilla",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Axila",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Esternón",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Fémur",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Vértebra",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Tráquea",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Diafragma",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Úvula",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Bíceps",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Rótula",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Glúteo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Iris",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Pupila",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Médula",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Intestino",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

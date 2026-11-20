@@ -1,0 +1,370 @@
+{
+  "id": "dosmil",
+  "name": "Los años 2000",
+  "description": "Nostalgia pura: MSN, Tamagotchi y RBD.",
+  "icon": "💿",
+  "category": "cultura-pop",
+  "background": "linear-gradient(135deg, #ec407a, #26c6da)",
+  "words": [
+    {
+      "text": "Tamagotchi",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "MSN Messenger",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "iPod",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Nokia",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Disco compacto",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Blockbuster",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "MySpace",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Rebelde",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "High School Musical",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Hannah Montana",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Crocs",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Shrek",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Game Boy",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bob Esponja",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Beyblade",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Yu-Gi-Oh!",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Harry Potter",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Tazos",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Walkman",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Discman",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Hi5",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Fotolog",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Zumbido de MSN",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "BlackBerry",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "PSP",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Nintendo DS",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Wii",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Juegos de Friv",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Club Penguin",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Habbo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Floricienta",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Lizzie McGuire",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Los Jonas Brothers",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Avril Lavigne",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Britney Spears",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Gasolina",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "La Academia",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Big Brother",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Emo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Reggaetón viejito",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ares",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "LimeWire",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Ringtone polifónico",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Motorola Razr",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Pantalla de tubo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Messenger con estado",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Grabar CD",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Módem de internet",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Encarta",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Paint",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Buscaminas",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Pinball de Windows",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Winamp",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "DVD pirata",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Ciber café",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Tarjeta de memoria",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Correo de Hotmail",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Pokémon cristal",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Tetris de 9999 juegos",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Plantas contra zombis",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

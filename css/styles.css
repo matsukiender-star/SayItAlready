@@ -1,4 +1,7 @@
-/* ===== Reset & Base ===== */
+/* ¡Dilo Ya! — estilos globales y tokens de diseño.
+   Los componentes (Shadow DOM) heredan las variables de :root. */
+@import url('../fonts/fonts.css');
+
 *,
 *::before,
 *::after {
@@ -8,74 +11,133 @@
 }
 
 :root {
-  --color-bg: #1a1a2e;
-  --color-surface: #16213e;
-  --color-primary: #e94560;
-  --color-primary-hover: #ff6b81;
-  --color-success: #2ecc71;
-  --color-skip: #f39c12;
-  --color-text: #eee;
-  --color-text-muted: #aaa;
-  --color-overlay: rgba(0, 0, 0, 0.6);
+  color-scheme: dark;
 
-  --font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --font-size-sm: 0.875rem;
-  --font-size-md: 1rem;
-  --font-size-lg: 1.5rem;
-  --font-size-xl: 2rem;
-  --font-size-xxl: 3.5rem;
+  /* Color */
+  --bg: #0c0a1d;
+  --bg-2: #15112e;
+  --surface: rgb(255 255 255 / 0.06);
+  --surface-2: rgb(255 255 255 / 0.1);
+  --surface-strong: rgb(24 20 52 / 0.92);
+  --stroke: rgb(255 255 255 / 0.12);
+  --text: #f6f4ff;
+  --text-muted: #aaa4cf;
+  --text-dim: #77719c;
+  --brand-1: #ff3d7f;
+  --brand-2: #ff9a3d;
+  --brand-3: #7c5cff;
+  --brand-gradient: linear-gradient(120deg, var(--brand-1), var(--brand-2));
+  --brand-gradient-3: linear-gradient(120deg, var(--brand-3), var(--brand-1) 55%, var(--brand-2));
+  --success: #1fe0a0;
+  --skip: #ffb020;
+  --danger: #ff5470;
 
-  --radius: 12px;
-  --spacing: 1rem;
-  --transition: 200ms ease;
+  /* Compatibilidad con estilos antiguos */
+  --color-bg: var(--bg);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-primary: var(--brand-1);
+  --color-success: var(--success);
+  --color-skip: var(--skip);
+
+  /* Tipografía */
+  --font-display: 'Fredoka', 'Baloo 2', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* Forma y profundidad */
+  --radius-sm: 12px;
+  --radius: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 2px 8px rgb(0 0 0 / 0.25);
+  --shadow: 0 10px 30px -8px rgb(0 0 0 / 0.55);
+  --shadow-lg: 0 24px 60px -12px rgb(0 0 0 / 0.7);
+  --glow: 0 10px 40px -6px rgb(255 61 127 / 0.55);
+
+  /* Movimiento */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 160ms;
+  --dur: 280ms;
+  --dur-slow: 520ms;
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 html, body {
   height: 100%;
   overflow: hidden;
-  font-family: var(--font-family);
-  font-size: var(--font-size-md);
-  color: var(--color-text);
-  background: var(--color-bg);
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--text);
+  background: var(--bg);
   -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
   user-select: none;
+  -webkit-user-select: none;
+  overscroll-behavior: none;
+}
+
+/* Fondo "mesh" animado y lento */
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  inset: -20vmax;
+  z-index: -1;
+  pointer-events: none;
+  filter: blur(60px);
+  opacity: 0.55;
+}
+
+body::before {
+  background:
+    radial-gradient(35vmax 35vmax at 15% 20%, rgb(124 92 255 / 0.55), transparent 70%),
+    radial-gradient(30vmax 30vmax at 85% 15%, rgb(255 61 127 / 0.4), transparent 70%);
+  animation: mesh-a 22s var(--ease-in-out) infinite alternate;
+}
+
+body::after {
+  background:
+    radial-gradient(32vmax 32vmax at 70% 85%, rgb(255 154 61 / 0.32), transparent 70%),
+    radial-gradient(28vmax 28vmax at 20% 90%, rgb(31 224 160 / 0.18), transparent 70%);
+  animation: mesh-b 28s var(--ease-in-out) infinite alternate;
+}
+
+@keyframes mesh-a {
+  to { transform: translate3d(6vmax, 8vmax, 0) rotate(8deg); }
+}
+
+@keyframes mesh-b {
+  to { transform: translate3d(-8vmax, -5vmax, 0) rotate(-6deg); }
 }
 
 #app {
   height: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
-/* ===== Buttons ===== */
 button {
   font-family: inherit;
-  font-size: var(--font-size-md);
+  font-size: 1rem;
+  color: inherit;
   cursor: pointer;
   border: none;
-  border-radius: var(--radius);
-  padding: 0.75em 1.5em;
-  transition: background var(--transition), transform var(--transition);
+  background: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
-button:active {
-  transform: scale(0.96);
-}
-
-/* ===== Animations ===== */
-@keyframes fade-in {
-  from { opacity: 0; transform: translateY(12px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50%      { transform: scale(1.05); }
-}
+/* Transición suave al navegar entre páginas */
+@view-transition { navigation: auto; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
 }

@@ -1,0 +1,27 @@
+{
+  "appId": "com.matsukiender.diloya",
+  "appName": "¡Dilo Ya!",
+  "webDir": "www",
+  "backgroundColor": "#0c0a1d",
+  "android": {
+    "backgroundColor": "#0c0a1d",
+    "allowMixedContent": false,
+    "captureInput": false,
+    "webContentsDebuggingEnabled": false
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1200,
+      "launchAutoHide": true,
+      "launchFadeOutDuration": 300,
+      "backgroundColor": "#0c0a1d",
+      "showSpinner": false,
+      "androidScaleType": "CENTER_CROP"
+    },
+    "StatusBar": {
+      "overlaysWebView": true,
+      "style": "DARK",
+      "backgroundColor": "#00000000"
+    }
+  }
+}

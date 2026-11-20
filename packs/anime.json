@@ -1,0 +1,370 @@
+{
+  "id": "anime",
+  "name": "Anime",
+  "description": "Para los otakus del grupo.",
+  "icon": "🍥",
+  "category": "entretenimiento",
+  "background": "linear-gradient(135deg, #ff4081, #7c4dff)",
+  "words": [
+    {
+      "text": "Goku",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Naruto",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pikachu",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Sailor Moon",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Luffy",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Doraemon",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Vegeta",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Ash Ketchum",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Totoro",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Dragon Ball",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "One Piece",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pokémon",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Los Caballeros del Zodiaco",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Digimon",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Hello Kitty",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Gohan",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Sasuke",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Kakashi",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Shin-chan",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Candy Candy",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Death Note",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Attack on Titan",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Demon Slayer",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "My Hero Academia",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Jujutsu Kaisen",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Bleach",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Fullmetal Alchemist",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "One Punch Man",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Spy x Family",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Inuyasha",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Ranma ½",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Captain Tsubasa",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Sakura Card Captor",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Evangelion",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Tokyo Ghoul",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Haikyuu",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Chainsaw Man",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Hunter x Hunter",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Yu-Gi-Oh!",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Beyblade",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cowboy Bebop",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Akira",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Steins;Gate",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Mob Psycho 100",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Code Geass",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Dandadan",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Vinland Saga",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Frieren",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Ghost in the Shell",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Berserk",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "JoJo's Bizarre Adventure",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Made in Abyss",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Violet Evergarden",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Your Name",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Sword Art Online",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Black Clover",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Dr. Stone",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Kaiju No. 8",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Blue Lock",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Oshi no Ko",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

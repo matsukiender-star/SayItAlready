@@ -1,0 +1,430 @@
+{
+  "id": "peliculas",
+  "name": "Películas",
+  "description": "Taquillazos, clásicos y joyas del cine.",
+  "icon": "🎬",
+  "category": "entretenimiento",
+  "background": "linear-gradient(135deg, #7b1fa2, #e91e63)",
+  "words": [
+    {
+      "text": "Titanic",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Shrek",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Avatar",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Toy Story",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Harry Potter",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Jurassic Park",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Star Wars",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Spider-Man",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Batman",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Frozen",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Coco",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "El Rey León",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Rápido y furioso",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Los Vengadores",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Barbie",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Tiburón",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Matrix",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Rocky",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "E.T.",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Piratas del Caribe",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Volver al futuro",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Mi villano favorito",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Buscando a Nemo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "King Kong",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Jumanji",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "El Padrino",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Forrest Gump",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Gladiador",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Mamma Mia",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Interestelar",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Top Gun",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Oppenheimer",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Joker",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Titanes del Pacífico",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "El Señor de los Anillos",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "La Monja",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Encanto",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Duna",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Mean Girls",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Mi pobre angelito",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Sexto sentido",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Misión imposible",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Los Increíbles",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Kung Fu Panda",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Hombres de negro",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Grease",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Pulp Fiction",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "El exorcista",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Black Panther",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Wonka",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "El laberinto del fauno",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Amores perros",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Y tu mamá también",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Roma",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Parásitos",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "El Origen",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Club de la pelea",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Relatos salvajes",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "El secreto de sus ojos",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Todo en todas partes al mismo tiempo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Whiplash",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "La La Land",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "El gran Lebowski",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Casablanca",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Psicosis",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "El resplandor",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Nosotros los Nobles",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Como agua para chocolate",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Coraline",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Pedro Páramo",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}

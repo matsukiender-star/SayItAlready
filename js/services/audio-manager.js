@@ -1,15 +1,17 @@
 /**
- * Manages sound effects and haptic feedback using the Web Audio API.
- * Generates tones programmatically — no audio files needed.
+ * Efectos de sonido (Web Audio API, sin archivos de audio) y vibración.
  */
 import { getSettings } from './settings.js';
+import { vibrate } from './native.js';
 
 export class AudioManager {
   #ctx = null;
 
   #ensureContext() {
     if (!this.#ctx) {
-      this.#ctx = new (window.AudioContext || window.webkitAudioContext)();
+      const Ctx = window.AudioContext || window.webkitAudioContext;
+      if (!Ctx) return null;
+      this.#ctx = new Ctx();
     }
     if (this.#ctx.state === 'suspended') {
       this.#ctx.resume();
@@ -17,59 +19,69 @@ export class AudioManager {
     return this.#ctx;
   }
 
-  /** Play a short tone. */
-  #playTone(frequency, duration = 0.15, type = 'sine', gain = 0.3) {
+  /** Tono corto con envolvente suave. */
+  #playTone(frequency, duration = 0.15, type = 'sine', gain = 0.3, delay = 0) {
     if (!getSettings().soundEnabled) return;
     const ctx = this.#ensureContext();
+    if (!ctx) return;
+    const t0 = ctx.currentTime + delay;
     const osc = ctx.createOscillator();
     const vol = ctx.createGain();
     osc.type = type;
-    osc.frequency.value = frequency;
-    vol.gain.value = gain;
-    // Quick fade out to avoid clicks
-    vol.gain.setTargetAtTime(0, ctx.currentTime + duration * 0.8, 0.02);
+    osc.frequency.setValueAtTime(frequency, t0);
+    vol.gain.setValueAtTime(0.0001, t0);
+    vol.gain.exponentialRampToValueAtTime(gain, t0 + 0.012);
+    vol.gain.exponentialRampToValueAtTime(0.0001, t0 + duration);
     osc.connect(vol).connect(ctx.destination);
-    osc.start(ctx.currentTime);
-    osc.stop(ctx.currentTime + duration);
+    osc.start(t0);
+    osc.stop(t0 + duration + 0.02);
   }
 
   #vibrate(pattern) {
     if (!getSettings().vibrationEnabled) return;
-    if (navigator.vibrate) {
-      navigator.vibrate(pattern);
-    }
+    vibrate(pattern);
   }
 
-  /** Correct guess: happy rising tone + short buzz. */
+  /** Acierto: arpegio ascendente brillante + vibración corta. */
   correct() {
-    this.#playTone(523, 0.1, 'sine');  // C5
-    setTimeout(() => this.#playTone(659, 0.1, 'sine'), 100); // E5
-    setTimeout(() => this.#playTone(784, 0.15, 'sine'), 200); // G5
-    this.#vibrate(100);
+    this.#playTone(659, 0.09, 'triangle', 0.28);        // E5
+    this.#playTone(784, 0.09, 'triangle', 0.28, 0.08);  // G5
+    this.#playTone(1047, 0.18, 'triangle', 0.3, 0.16);  // C6
+    this.#vibrate(90);
   }
 
-  /** Skip: descending tone + double buzz. */
+  /** Pasar: dos tonos descendentes + doble vibración. */
   skip() {
-    this.#playTone(400, 0.12, 'triangle');
-    setTimeout(() => this.#playTone(300, 0.15, 'triangle'), 120);
-    this.#vibrate([50, 50, 50]);
+    this.#playTone(392, 0.11, 'sine', 0.3);
+    this.#playTone(294, 0.16, 'sine', 0.3, 0.11);
+    this.#vibrate([40, 50, 40]);
   }
 
-  /** Warning: urgent beeps. */
+  /** Cuenta regresiva 3-2-1. */
+  tick(final = false) {
+    this.#playTone(final ? 880 : 587, final ? 0.25 : 0.1, 'square', 0.12);
+    this.#vibrate(final ? 180 : 60);
+  }
+
+  /** Últimos segundos. */
   warning() {
-    for (let i = 0; i < 3; i++) {
-      setTimeout(() => this.#playTone(880, 0.08, 'square', 0.2), i * 180);
-    }
-    this.#vibrate([100, 80, 100, 80, 100]);
+    for (let i = 0; i < 3; i++) this.#playTone(880, 0.07, 'square', 0.16, i * 0.18);
+    this.#vibrate([90, 70, 90, 70, 90]);
   }
 
-  /** Time's up: long low buzz. */
+  /** Se acabó el tiempo. */
   timesUp() {
-    this.#playTone(220, 0.5, 'sawtooth', 0.25);
+    this.#playTone(330, 0.22, 'sawtooth', 0.18);
+    this.#playTone(220, 0.5, 'sawtooth', 0.2, 0.2);
     this.#vibrate(500);
   }
 
-  /** Call once on a user gesture to unlock audio context. */
+  /** Fanfarria del resumen. */
+  fanfare() {
+    [523, 659, 784, 1047].forEach((f, i) => this.#playTone(f, 0.16, 'triangle', 0.22, i * 0.11));
+  }
+
+  /** Llamar en un gesto del usuario para desbloquear el audio. */
   unlock() {
     this.#ensureContext();
   }

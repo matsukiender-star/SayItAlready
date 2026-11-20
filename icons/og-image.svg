@@ -1,32 +1,51 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <!-- OG/Social sharing image: 1200x630, icon left + title right -->
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1a1a2e"/>
-      <stop offset="100%" stop-color="#16213e"/>
+      <stop offset="0" stop-color="#0c0a1d"/>
+      <stop offset="1" stop-color="#241a4a"/>
     </linearGradient>
+    <radialGradient id="g1" cx="0.15" cy="0.2" r="0.5"><stop offset="0" stop-color="#7c5cff" stop-opacity="0.7"/><stop offset="1" stop-color="#7c5cff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2" cx="0.9" cy="0.85" r="0.5"><stop offset="0" stop-color="#ff3d7f" stop-opacity="0.6"/><stop offset="1" stop-color="#ff3d7f" stop-opacity="0"/></radialGradient>
+    <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff3d7f"/><stop offset="1" stop-color="#ff9a3d"/></linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <!-- Icon on the left, scaled and centered vertically -->
-  <g transform="translate(280, 300) scale(0.85)">
-    <g transform="rotate(-6)">
-      <rect x="-130" y="-110" width="260" height="210" rx="50" fill="#e94560"/>
-      <polygon points="-80,90 -40,90 -100,170" fill="#e94560"/>
-    </g>
-    <g stroke="#e94560" stroke-linecap="round" opacity="0.9">
-      <line x1="134" y1="-130" x2="189" y2="-165" stroke-width="28"/>
-      <line x1="154" y1="-70" x2="214" y2="-85" stroke-width="30"/>
-      <line x1="149" y1="-5" x2="206" y2="5" stroke-width="28"/>
-      <line x1="-141" y1="-125" x2="-198" y2="-158" stroke-width="28"/>
-      <line x1="-161" y1="-60" x2="-218" y2="-75" stroke-width="30"/>
-    </g>
-    <g transform="rotate(-6)">
-      <rect x="-18" y="-90" width="36" height="100" rx="10" fill="#ffffff"/>
-      <circle cx="0" cy="38" r="20" fill="#ffffff"/>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <rect width="1200" height="630" fill="url(#g2)"/>
+  <g transform="translate(110 155) scale(0.625)">
+  <defs>
+    <linearGradient id="ibg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset="0.55" stop-color="#ff3d7f"/>
+      <stop offset="1" stop-color="#ff9a3d"/>
+    </linearGradient>
+    <linearGradient id="iink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff3d7f"/>
+      <stop offset="1" stop-color="#ff7a45"/>
+    </linearGradient>
+    <filter id="ish" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#2a0a3d" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#ibg)"/>
+  <circle cx="400" cy="110" r="70" fill="#fff" opacity="0.12"/>
+  <circle cx="90" cy="430" r="90" fill="#fff" opacity="0.08"/>
+  <g transform="translate(256 246) rotate(-8)" filter="url(#ish)">
+    <rect x="-150" y="-118" width="300" height="214" rx="56" fill="#fff"/>
+    <path d="M-70 92 L-24 92 L-96 168 Z" fill="#fff"/>
+    <g fill="url(#iink)">
+      <rect x="-62" y="-14" width="34" height="88" rx="14"/>
+      <circle cx="-45" cy="-48" r="19"/>
+      <rect x="28" y="-86" width="34" height="88" rx="14"/>
+      <circle cx="45" cy="36" r="19"/>
     </g>
   </g>
-  <!-- Title text on the right -->
-  <text x="560" y="270" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="88" fill="#e94560">Say It</text>
-  <text x="560" y="380" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="88" fill="#ffffff">Already!</text>
-  <text x="560" y="440" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="32" fill="#ffffff" opacity="0.6">A party word guessing game</text>
+  <g stroke="#fff" stroke-linecap="round" stroke-width="22" opacity="0.9">
+    <line x1="428" y1="250" x2="470" y2="236"/>
+    <line x1="420" y1="306" x2="462" y2="318"/>
+    <line x1="74" y1="168" x2="40" y2="140"/>
+  </g>
+</g>
+  <text x="480" y="300" font-family="Fredoka, 'DejaVu Sans', sans-serif" font-weight="700" font-size="120" fill="#fff">¡Dilo <tspan fill="url(#txt)">Ya!</tspan></text>
+  <text x="484" y="380" font-family="Inter, 'DejaVu Sans', sans-serif" font-weight="600" font-size="38" fill="#c9c3ee">Adivina con el teléfono en la frente</text>
+  <text x="484" y="440" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="30" fill="#8f88b8">26 mazos en español · Android y web</text>
 </svg>

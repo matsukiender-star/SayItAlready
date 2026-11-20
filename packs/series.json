@@ -1,0 +1,394 @@
+{
+  "id": "series",
+  "name": "Series y novelas",
+  "description": "Maratones de Netflix y telenovelas de la abuela.",
+  "icon": "📺",
+  "category": "entretenimiento",
+  "background": "linear-gradient(135deg, #b71c1c, #212121)",
+  "words": [
+    {
+      "text": "Los Simpson",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Friends",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Stranger Things",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "El Chavo del 8",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "La casa de papel",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Merlina",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "El juego del calamar",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Dragon Ball",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Pokémon",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Bob Esponja",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Hora de aventura",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Rebelde",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Betty la fea",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "La familia peluche",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Los Picapiedra",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Scooby-Doo",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Phineas y Ferb",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "El Chapulín Colorado",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Hannah Montana",
+      "tags": [
+        "difficulty:0"
+      ]
+    },
+    {
+      "text": "Breaking Bad",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Juego de tronos",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "The Office",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "La rosa de Guadalupe",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Narcos",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Élite",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Club de Cuervos",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Luis Miguel: la serie",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "The Walking Dead",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Grey's Anatomy",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Lost",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Dark",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Bridgerton",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "The Mandalorian",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Peaky Blinders",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Cómo conocí a tu madre",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "The Big Bang Theory",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Casados con hijos",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Vecinos",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "María la del barrio",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Café con aroma de mujer",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Los Serrano",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Floricienta",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Patito feo",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "Chespirito",
+      "tags": [
+        "difficulty:1"
+      ]
+    },
+    {
+      "text": "The Last of Us",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Succession",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Better Call Saul",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Black Mirror",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Severance",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "The Bear",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Ozark",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Fargo",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Sherlock",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Mindhunter",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Ugly Betty",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Rubí",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Pasión de gavilanes",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Teresa",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "La reina del sur",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Amar a muerte",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Los Soprano",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Twin Peaks",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Hermanos de sangre",
+      "tags": [
+        "difficulty:2"
+      ]
+    },
+    {
+      "text": "Chernobyl",
+      "tags": [
+        "difficulty:2"
+      ]
+    }
+  ]
+}
