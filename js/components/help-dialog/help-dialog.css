@@ -1,0 +1,109 @@
+/* Diálogo «Cómo jugar». */
+.htp-page {
+  display: none;
+
+  &.active { display: block; animation: rise var(--dur-slow) var(--ease-out); }
+}
+
+.htp-hero {
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 8px;
+  font-size: 3rem;
+  border-radius: var(--radius);
+  background: var(--brand-gradient-3);
+}
+
+.htp-phone { display: inline-block; animation: tilt-demo 2.4s ease-in-out infinite; transform-origin: 50% 100%; }
+.htp-tilt { display: inline-block; animation: icon-float 2.6s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .htp-phone, .htp-tilt { animation: none !important; }
+}
+
+@keyframes tilt-demo {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(-22deg); }
+  60% { transform: rotate(22deg); }
+}
+
+.htp-intro { color: var(--text-muted); margin-bottom: 14px; }
+
+.htp-steps {
+  list-style: none;
+  counter-reset: step;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & li {
+    counter-increment: step;
+    position: relative;
+    padding: 12px 12px 12px 50px;
+    border-radius: var(--radius);
+    background: var(--surface);
+    font-size: 0.92rem;
+    line-height: 1.4;
+    color: var(--text-muted);
+  }
+
+  & li b { color: var(--text); }
+
+  & li::before {
+    content: counter(step);
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    width: 26px;
+    height: 26px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--brand-gradient);
+    color: #fff;
+    font-weight: 800;
+    font-size: 0.85rem;
+  }
+}
+
+kbd {
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: rgb(255 255 255 / 0.12);
+  font-family: inherit;
+  font-size: 0.8em;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.htp-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+.htp-nav-btn {
+  padding: 10px 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+
+  &.hidden { visibility: hidden; }
+}
+
+.htp-dots { display: flex; gap: 6px; }
+
+.htp-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: rgb(255 255 255 / 0.25);
+  transition: width var(--dur) var(--ease-out), background var(--dur);
+
+  &.active { width: 22px; background: var(--brand-1); }
+}
+
+.htp-got-it { width: 100%; margin-top: 12px; }

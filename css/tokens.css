@@ -1,0 +1,57 @@
+/* Tokens de diseño de ¡Dilo Ya!: color, tipografía, forma y movimiento.
+   Los componentes (Shadow DOM) los heredan de :root. */
+:root {
+  color-scheme: dark;
+
+  /* Color */
+  --bg: #0c0a1d;
+  --bg-2: #15112e;
+  --surface: rgb(255 255 255 / 0.06);
+  --surface-2: rgb(255 255 255 / 0.1);
+  --surface-strong: rgb(24 20 52 / 0.92);
+  --stroke: rgb(255 255 255 / 0.12);
+  --text: #f6f4ff;
+  --text-muted: #aaa4cf;
+  --text-dim: #77719c;
+  --brand-1: #ff3d7f;
+  --brand-2: #ff9a3d;
+  --brand-3: #7c5cff;
+  --brand-gradient: linear-gradient(120deg, var(--brand-1), var(--brand-2));
+  --brand-gradient-3: linear-gradient(120deg, var(--brand-3), var(--brand-1) 55%, var(--brand-2));
+  --success: #1fe0a0;
+  --skip: #ffb020;
+  --danger: #ff5470;
+
+  /* Compatibilidad con estilos antiguos */
+  --color-bg: var(--bg);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-primary: var(--brand-1);
+  --color-success: var(--success);
+  --color-skip: var(--skip);
+
+  /* Tipografía */
+  --font-display: 'Fredoka', 'Baloo 2', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* Forma y profundidad */
+  --radius-sm: 12px;
+  --radius: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 2px 8px rgb(0 0 0 / 0.25);
+  --shadow: 0 10px 30px -8px rgb(0 0 0 / 0.55);
+  --shadow-lg: 0 24px 60px -12px rgb(0 0 0 / 0.7);
+  --glow: 0 10px 40px -6px rgb(255 61 127 / 0.55);
+
+  /* Movimiento */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 160ms;
+  --dur: 280ms;
+  --dur-slow: 520ms;
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}

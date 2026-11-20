@@ -1,204 +1,104 @@
-import './components/home-screen.js';
-import { decompressFromBase64 } from './services/compress.js';
-import { isNative, bindBackButton, hideSplash, unlockOrientation } from './services/native.js';
+/**
+ * Arranque de la pantalla de inicio (index.html).
+ * El router refleja los diálogos en la URL para que «atrás» los cierre.
+ */
+import './components/home-screen/home-screen.js';
+import './services/install.js';
+import { pushView, replaceView, getViewParams, isMainView } from './router/url-state.js';
+import { readSharedDeck, readImportHash } from './router/deep-links.js';
+import { startGame, gameUrl } from './router/start-game.js';
+import { registerServiceWorker } from './services/service-worker.js';
+import { onBackButton, exitApp } from './services/native/app-events.js';
+import { hideSplash } from './services/native/system-ui.js';
+import { unlockOrientation } from './services/native/orientation.js';
 
 const app = document.getElementById('app');
-let routing = false; // true while handling popstate, suppresses URL side-effects
 
-/* ---- URL state helpers ---- */
-function buildQuery(params) {
-  const sp = new URLSearchParams();
-  for (const [k, v] of Object.entries(params)) {
-    if (v != null) sp.set(k, v);
-  }
-  return '?' + sp.toString();
+/** Cómo abrir cada vista sobre la pantalla de inicio. */
+const VIEW_OPENERS = {
+  settings: (home) => home.openSettings(),
+  help: (home) => home.openHelp(),
+  edit: (home, p) => home.openEditor(p.deck),
+  deck: (home, p) => home.openDeckById(p.deck),
+};
+
+/* ---- Vistas ---- */
+function currentHome() {
+  return app.querySelector('home-screen');
 }
 
-function pushView(params) {
-  history.pushState(params, '', buildQuery(params));
-}
-
-function replaceView(params) {
-  history.replaceState(params, '', buildQuery(params));
-}
-
-function getViewParams() {
-  const sp = new URLSearchParams(location.search);
-  const obj = {};
-  for (const [k, v] of sp) obj[k] = v;
-  return obj;
-}
-
-/* ---- Redirect legacy game URLs to game.html ---- */
-function redirectToGame(deckId) {
-  if (!deckId) return false;
-  const params = new URLSearchParams({ deck: deckId });
-  location.replace(`game.html?${params}`);
-  return true;
-}
-
-/* ---- Simple view router ---- */
-function showHome(opts = {}) {
-  app.innerHTML = '';
+/** Monta la pantalla de inicio; `onReady` corre cuando cargan los mazos. */
+function showHome(onReady) {
   const home = document.createElement('home-screen');
-  app.appendChild(home);
+  app.replaceChildren(home);
+  if (onReady) home.addEventListener('decks-loaded', () => onReady(home), { once: true });
+  return home;
+}
 
-  if (opts.openDeck) {
-    home.addEventListener('decks-loaded', () => home.openDeckById(opts.openDeck), { once: true });
-  } else if (opts.openEditor) {
-    const deckId = opts.openEditor === true ? null : opts.openEditor;
-    home.addEventListener('decks-loaded', () => home.openEditor(deckId), { once: true });
-  } else if (opts.openEditorWithDeck) {
-    home.addEventListener('decks-loaded', () => home.openEditorWithDeck(opts.openEditorWithDeck), { once: true });
-  } else if (opts.openSettings) {
-    home.addEventListener('decks-loaded', () => home.openSettings(), { once: true });
-  } else if (opts.openHelp) {
-    home.addEventListener('decks-loaded', () => home.openHelp(), { once: true });
+/** Abre la vista de la URL, o cierra los diálogos si es la principal. */
+function applyView(params) {
+  const opener = VIEW_OPENERS[params.view];
+  const home = currentHome();
+  if (!opener) {
+    if (home) home.closeDialogs();
+    else showHome();
+  } else if (home) {
+    opener(home, params);
+  } else {
+    showHome((h) => opener(h, params));
   }
 }
 
-/* ---- Event delegation ---- */
-app.addEventListener('go-home', () => {
-  pushView({ view: 'main' });
-  showHome();
-});
-
-// Home-screen dialog events — open pushes URL; close uses history.back()
-app.addEventListener('deck-preview-open', (e) => {
-  pushView({ view: 'deck', deck: e.detail.deckId });
-});
-
-app.addEventListener('settings-open', () => {
-  pushView({ view: 'settings' });
-});
-
-app.addEventListener('help-open', () => {
-  if (routing) return;
-  pushView({ view: 'help' });
-});
-
+/* ---- Eventos de la pantalla de inicio ---- */
+app.addEventListener('deck-preview-open', (e) => pushView({ view: 'deck', deck: e.detail.deckId }));
+app.addEventListener('settings-open', () => pushView({ view: 'settings' }));
+app.addEventListener('help-open', () => pushView({ view: 'help' }));
 app.addEventListener('edit-deck-open', (e) => {
-  if (routing) return;
-  const deckId = e.detail?.deckId;
-  pushView(deckId ? { view: 'edit', deck: deckId } : { view: 'edit' });
+  pushView(e.detail?.deckId ? { view: 'edit', deck: e.detail.deckId } : { view: 'edit' });
+});
+app.addEventListener('dialog-dismiss', () => history.back());
+app.addEventListener('play', (e) => startGame(e.detail));
+
+window.addEventListener('popstate', () => applyView(getViewParams()));
+
+/* ---- Android ---- */
+onBackButton(({ canGoBack }) => {
+  if (isMainView() || !canGoBack) exitApp();
+  else history.back();
 });
 
-/* ---- Back button ---- */
-window.addEventListener('popstate', async () => {
-  routing = true;
-  try {
-  const p = getViewParams();
-  const home = app.querySelector('home-screen');
-  switch (p.view) {
-    case 'settings':
-      if (home) { home.openSettings(); } else { showHome({ openSettings: true }); }
-      break;
-    case 'help':
-      if (home) { home.openHelp(); } else { showHome({ openHelp: true }); }
-      break;
-    case 'edit':
-      if (home) { home.openEditor(p.deck); } else { showHome({ openEditor: p.deck || true }); }
-      break;
-    case 'deck':
-      if (home) { home.openDeckById(p.deck); } else { showHome({ openDeck: p.deck }); }
-      break;
-    // Legacy game URLs — redirect to game.html
-    case 'game':
-    case 'game-paused':
-      if (p.deck) { redirectToGame(p.deck); return; }
-      if (home) { home.closeDialogs(); } else { showHome(); }
-      break;
-    case 'results':
-      // Results can't be replayed from a URL — just go home
-      if (home) { home.closeDialogs(); } else { showHome(); }
-      break;
-    default:
-      if (home) { home.closeDialogs(); } else { showHome(); }
+/* ---- Arranque ---- */
+async function boot() {
+  const params = getViewParams();
+  if ((params.view === 'game' || params.view === 'game-paused') && params.deck) {
+    location.replace(gameUrl(params.deck)); // enlaces antiguos
+    return;
   }
-  } finally { routing = false; }
-});
 
-/* ---- PWA install prompt ---- */
-import './services/install.js';
+  // La vista principal queda debajo, así «atrás» cierra el diálogo sin salir.
+  replaceView({ view: 'main' });
+  let home;
+  const shared = params.view === 'edit' ? await readSharedDeck(params.add) : null;
+  if (shared) {
+    pushView({ view: 'edit' });
+    home = showHome((h) => h.openEditorWithDeck(shared));
+  } else if (VIEW_OPENERS[params.view]) {
+    const { view, deck } = params;
+    pushView(deck ? { view, deck } : { view });
+    home = showHome((h) => VIEW_OPENERS[view](h, params));
+  } else {
+    home = showHome();
+  }
 
-/* ---- Service worker (solo versión web) ---- */
-if ('serviceWorker' in navigator && !isNative()) {
-  navigator.serviceWorker.register('./sw.js').catch((err) => {
-    console.warn('No se pudo registrar el service worker:', err);
-  });
+  const importJson = readImportHash();
+  if (importJson) {
+    home.addEventListener('decks-loaded', () => {
+      home.importFromJSON(importJson).catch((err) => console.warn('No se pudo importar:', err));
+    }, { once: true });
+  }
 }
 
-/* ---- Android: botón atrás y pantalla de inicio ---- */
-// En la vista principal sin diálogos abiertos, "atrás" sale de la app.
-bindBackButton({ isRoot: () => !history.state || history.state.view === 'main' || !new URLSearchParams(location.search).get('view') });
+boot();
 hideSplash();
 unlockOrientation();
-
-/* ---- Boot from URL ---- */
-(async () => {
-  const p = getViewParams();
-  switch (p.view) {
-    case 'settings':
-      replaceView({ view: 'settings' });
-      showHome({ openSettings: true });
-      break;
-    case 'edit':
-      if (p.add) {
-        try {
-          const json = await decompressFromBase64(p.add);
-          const deck = JSON.parse(json);
-          replaceView({ view: 'edit' });
-          showHome({ openEditorWithDeck: deck });
-        } catch (err) {
-          console.warn('Invalid add data:', err);
-          replaceView({ view: 'edit' });
-          showHome({ openEditor: true });
-        }
-      } else {
-        replaceView(p.deck ? { view: 'edit', deck: p.deck } : { view: 'edit' });
-        showHome({ openEditor: p.deck || true });
-      }
-      break;
-    case 'help':
-      replaceView({ view: 'help' });
-      showHome({ openHelp: true });
-      break;
-    case 'deck':
-      replaceView({ view: 'deck', deck: p.deck });
-      showHome({ openDeck: p.deck });
-      break;
-    // Legacy game URLs — redirect to game.html
-    case 'game':
-    case 'game-paused':
-      if (p.deck && redirectToGame(p.deck)) return;
-      replaceView({ view: 'main' });
-      showHome();
-      break;
-    case 'results':
-      replaceView({ view: 'main' });
-      showHome();
-      break;
-    default:
-      replaceView({ view: 'main' });
-      showHome();
-  }
-
-  // Deep-link import via hash: #import/BASE64_JSON
-  const hash = location.hash;
-  if (hash.startsWith('#import/')) {
-    const encoded = hash.slice('#import/'.length);
-    try {
-      const json = atob(encoded);
-      // Wait for home-screen to finish loading decks
-      const home = app.querySelector('home-screen');
-      if (home) {
-        const doImport = () => home.importFromJSON(json).catch(err => console.warn('Import failed:', err));
-        home.addEventListener('decks-loaded', doImport, { once: true });
-      }
-    } catch (err) {
-      console.warn('Invalid import link:', err);
-    }
-    // Strip the hash so it doesn't re-trigger
-    history.replaceState(history.state, '', location.pathname + location.search);
-  }
-})();
+registerServiceWorker();

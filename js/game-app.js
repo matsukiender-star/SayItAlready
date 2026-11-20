@@ -1,46 +1,51 @@
-import './components/game-screen.js';
-import './components/round-summary.js';
-import { loadAllDecks } from './services/deck-store.js';
-import { getSettings } from './services/settings.js';
-import { probeTiltAvailable } from './services/tilt-detector.js';
-import { isNative, lockLandscape, unlockOrientation, hideSplash } from './services/native.js';
+/**
+ * Arranque de la partida (game.html?deck=…&difficulty=…&tilt=…).
+ * Alterna entre <game-screen> y <round-summary>.
+ */
+import './components/game-screen/game-screen.js';
+import './components/round-summary/round-summary.js';
+import { findDeck } from './services/storage/deck-store.js';
+import { getSettings } from './services/storage/settings.js';
+import { probeTiltAvailable } from './services/sensors/tilt-permission.js';
+import { isNative } from './services/native/platform.js';
+import { lockLandscape, unlockOrientation } from './services/native/orientation.js';
+import { onBackButton, onAppPause } from './services/native/app-events.js';
+import { hideSplash } from './services/native/system-ui.js';
+import { registerServiceWorker } from './services/service-worker.js';
 
 const app = document.getElementById('app');
 const HOME_URL = './index.html';
-
-/* ---- Parámetros de inicio ---- */
 const params = new URLSearchParams(location.search);
-const deckId = params.get('deck');
-const launchDifficulty = Number(params.get('difficulty') ?? 2);
-const tiltHint = params.get('tilt') === '1';
 
-/* ---- Configuración (se conserva en "Jugar otra vez") ---- */
-const gameConfig = {
+/** Configuración de la partida (se reutiliza en «Jugar otra vez»). */
+const config = {
   deck: null,
-  difficulty: launchDifficulty,
+  difficulty: Number(params.get('difficulty') ?? 2),
   controlMode: getSettings().controlMode,
-  tiltGranted: false,
 };
 
 /* ---- Vistas ---- */
+function currentGame() {
+  return app.querySelector('game-screen');
+}
+
 function showGame() {
   lockLandscape();
-  app.innerHTML = '';
   const game = document.createElement('game-screen');
-  game.deck = gameConfig.deck;
-  game.duration = getSettings().timerDuration;
-  game.controlMode = gameConfig.controlMode;
-  game.tiltGranted = gameConfig.tiltGranted;
-  game.difficulty = gameConfig.difficulty;
-  app.appendChild(game);
+  Object.assign(game, {
+    deck: config.deck,
+    duration: getSettings().timerDuration,
+    controlMode: config.controlMode,
+    difficulty: config.difficulty,
+  });
+  app.replaceChildren(game);
 }
 
 function showSummary(deck, results) {
   unlockOrientation();
-  app.innerHTML = '';
   const summary = document.createElement('round-summary');
   summary.data = { deck, results };
-  app.appendChild(summary);
+  app.replaceChildren(summary);
 }
 
 function goHome() {
@@ -48,80 +53,59 @@ function goHome() {
   location.replace(HOME_URL);
 }
 
+function setState(view) {
+  history.replaceState({ view }, '', location.pathname + location.search);
+}
+
 /* ---- Eventos ---- */
 app.addEventListener('round-end', (e) => {
-  const { deck, results } = e.detail;
-  history.replaceState({ view: 'results' }, '', location.pathname + location.search);
-  showSummary(deck, results);
+  setState('results');
+  showSummary(e.detail.deck, e.detail.results);
 });
 
 app.addEventListener('start-game', () => {
-  history.replaceState({ view: 'game' }, '', location.pathname + location.search);
+  setState('game');
   showGame();
 });
 
 app.addEventListener('go-home', goHome);
-
-app.addEventListener('game-paused', () => {
-  history.pushState({ view: 'game-paused' }, '');
-});
-
+app.addEventListener('game-paused', () => history.pushState({ view: 'game-paused' }, ''));
 app.addEventListener('game-resumed', () => {
   if (history.state?.view === 'game-paused') history.back();
 });
 
-/* ---- Botón atrás ---- */
+/* ---- Botón atrás (navegador) ---- */
 window.addEventListener('popstate', () => {
-  switch (history.state?.view) {
-    case 'game-paused':
-      app.querySelector('game-screen')?.showPause();
-      break;
-    case 'game': {
-      const game = app.querySelector('game-screen');
-      if (game) game.hidePause();
-      else showGame();
-      break;
-    }
-    default:
-      goHome();
-  }
+  const view = history.state?.view;
+  if (view === 'game-paused') currentGame()?.showPause();
+  else if (view === 'game') currentGame() ? currentGame().hidePause() : showGame();
+  else goHome();
 });
 
-// En Android: "atrás" durante el juego pausa; en pausa o en el resumen vuelve al inicio.
-if (isNative()) {
-  const capApp = globalThis.Capacitor?.Plugins?.App;
-  capApp?.addListener?.('backButton', () => {
-    const game = app.querySelector('game-screen');
-    if (game && history.state?.view === 'game') game.showPause();
-    else goHome();
-  });
-  // Si la app pasa a segundo plano, se pausa la ronda
-  capApp?.addListener?.('pause', () => app.querySelector('game-screen')?.showPause());
-}
+/* ---- Android: atrás pausa la ronda; en pausa o en el resumen vuelve al inicio ---- */
+onBackButton(() => {
+  if (currentGame() && history.state?.view === 'game') currentGame().showPause();
+  else goHome();
+});
+onAppPause(() => currentGame()?.showPause());
 
 /* ---- Arranque ---- */
-(async () => {
+async function boot() {
   hideSplash();
-  if (!deckId) { goHome(); return; }
-
-  const allDecks = await loadAllDecks();
-  const deck = allDecks.find((d) => d.id === deckId || d.name === deckId);
-  if (!deck) { goHome(); return; }
-  gameConfig.deck = deck;
-
-  if (gameConfig.controlMode === 'gyro') {
-    // En la app nativa no hace falta permiso: se comprueba directamente
-    gameConfig.tiltGranted = (tiltHint || isNative()) ? await probeTiltAvailable(1500) : false;
-    if (!gameConfig.tiltGranted) gameConfig.controlMode = 'touch'; // sin sensor → botones
+  config.deck = params.get('deck') ? await findDeck(params.get('deck')) : null;
+  if (!config.deck) {
+    goHome();
+    return;
   }
-
-  history.replaceState({ view: 'game' }, '', location.pathname + location.search);
+  if (config.controlMode === 'gyro') {
+    // En Android no hay permiso que pedir; en la web, el inicio ya lo pidió (tilt=1)
+    const canProbe = params.get('tilt') === '1' || isNative();
+    const available = canProbe && (await probeTiltAvailable(1500));
+    if (!available) config.controlMode = 'touch'; // sin sensor → botones
+  }
+  setState('game');
   showGame();
-})();
-
-/* ---- Service worker (solo versión web) ---- */
-if ('serviceWorker' in navigator && !isNative()) {
-  navigator.serviceWorker.register('./sw.js').catch((err) => {
-    console.warn('No se pudo registrar el service worker:', err);
-  });
 }
+
+boot();
+registerServiceWorker();

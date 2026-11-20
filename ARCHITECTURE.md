@@ -2,55 +2,92 @@
 
 ¡Dilo Ya! es una app web **sin build ni frameworks** (HTML, CSS y JavaScript con módulos ES) que se empaqueta como app de Android con **Capacitor 8**. El navegador o el WebView de Android cargan los archivos fuente tal cual.
 
-## Capas
+## Reglas del código
 
-| Capa | Tecnología | Notas |
+- **Una responsabilidad por archivo.** Cada componente vive en su carpeta, con la lógica (`.js`), la plantilla HTML (`.template.js`) y los estilos (`.css`) por separado.
+- **Máximo 800 líneas por archivo.** `npm test` lo comprueba con `scripts/check-file-size.mjs`, y la CI falla si alguno se pasa. Hoy el más largo tiene menos de 300.
+- La lógica pura (`models/`, `services/sensors/tilt-*`) no toca el DOM y tiene pruebas en `tests/`.
+
+## Estructura
+
+```
+index.html · game.html        páginas (inicio y partida)
+sw.js                         service worker (solo web)
+css/
+  tokens.css                  colores, tipografía, radios, curvas de animación
+  base.css                    página, fondo animado, accesibilidad
+  shared/                     reset · dialog · controls (botones, segmentado)
+js/
+  app.js                      arranque del inicio + router de diálogos
+  game-app.js                 arranque de la partida (juego ⇄ resumen)
+  router/                     url-state · deep-links · start-game
+  components/
+    shared/                   DialogElement (base), íconos, control segmentado
+    home-screen/              pantalla de inicio (coordina los diálogos)
+    deck-card/                tarjeta de mazo
+    category-chips/           filtros por categoría
+    deck-sheet/               detalle del mazo + «¡Jugar!»
+    settings-dialog/          ajustes (+ app-status: actualizar/instalar)
+    help-dialog/              «Cómo jugar»
+    deck-editor/              editor: formulario, filas de palabras, QR
+    game-screen/              partida: HUD, escenario de la palabra, depuración
+    game-countdown/           cuenta 3-2-1
+    round-summary/            resumen: puntuación y lista de palabras
+  models/                     deck, word-queue, deck-filters, deck-validation,
+                              categories, verdict, labels
+  services/
+    storage/                  settings, favoritos, historial, mazos (IndexedDB + packs)
+    sensors/                  tilt-math, tilt-permission, tilt-detector
+    native/                   platform, orientation, haptics, wake-lock, system-ui, app-events
+    audio/sounds.js           tonos sintetizados
+    feedback.js               sonido + vibración por evento del juego
+    timer.js · share.js · compress.js · install.js · app-update.js · service-worker.js
+  input/                      swipe · keyboard
+  effects/                    confetti · particles
+  utils/                      dom · text · color · count-up
+  vendor/qrcode.js            generador de QR (terceros)
+packs/                        mazos JSON + index.json (generados)
+scripts/                      build-web, validate-packs, check-file-size, decks-src/
+android/                      proyecto Android de Capacitor
+```
+
+## Comunicación entre componentes
+
+Los componentes no se llaman entre sí directamente: emiten eventos que cruzan el Shadow DOM (`utils/dom.js → emit`).
+
+| Evento | Lo emite | Lo atiende |
 | --- | --- | --- |
-| UI | Web Components + Shadow DOM | `home-screen`, `game-screen`, `round-summary` |
-| Estilos | CSS con anidamiento nativo | Tokens de diseño en `css/styles.css`; animaciones solo con `transform`/`opacity` |
-| Tipografía | Fredoka + Inter (woff2 locales) | `fonts/`, copiadas con `npm run fonts` |
-| Datos | `packs/*.json` + `packs/index.json` | Mazos integrados; los propios van en IndexedDB |
-| Ajustes | localStorage | `js/services/settings.js` |
-| Android | Capacitor 8 | `android/`; plugins leídos de `window.Capacitor.Plugins` |
-| Web | PWA + service worker | Solo se registra fuera de la app nativa |
+| `deck-select`, `deck-edit`, `favorite-change` | `deck-card` | `home-screen` |
+| `category-change` | `category-chips` | `home-screen` |
+| `play` {deck, difficulty} | `deck-sheet` | `app.js` → `router/start-game.js` |
+| `decks-changed` | `deck-editor` | `home-screen` (recarga) |
+| `help-seen` | `help-dialog` | `home-screen` (oculta la tarjeta de ayuda) |
+| `dialog-dismiss` | cualquier diálogo | `app.js` → `history.back()` |
+| `*-open` (deck-preview, settings, help, edit-deck) | `home-screen` | `app.js` → `pushView` |
+| `round-end`, `go-home`, `game-paused`, `game-resumed` | `game-screen` | `game-app.js` |
+| `start-game`, `go-home` | `round-summary` | `game-app.js` |
 
-## Flujo
+Los diálogos heredan de `components/shared/dialog-element.js`:
 
-1. `index.html` → `js/app.js` monta `<home-screen>`. Los diálogos (mazo, ajustes, ayuda, editor) se reflejan en la URL (`?view=…`), así que el botón «atrás» los cierra.
-2. «¡Jugar!» navega a `game.html?deck=…&difficulty=…&tilt=…`. `js/game-app.js` comprueba el sensor; si no hay giroscopio, usa botones.
-3. `<game-screen>`: cuenta 3‑2‑1 (mientras tanto el giroscopio calibra la postura neutral), ronda con reloj y tarjeta animada por palabra.
-4. Al terminar, `<round-summary>` muestra la puntuación, el confeti y la lista de palabras.
+- `open()` y `close()` los usa el router y no emiten nada.
+- `dismiss()` es el cierre hecho por el usuario: emite `dialog-dismiss` para que el historial retroceda.
 
-## Giroscopio (`js/services/tilt-detector.js`)
+## Giroscopio
 
-- En horizontal se usa `gamma`, que salta en ±90° justo en la posición de la frente. Se «desenvuelve» con `beta` para obtener un ángulo continuo donde ~90 es neutral (`landscapeTilt`).
-- `calibrate()` promedia las últimas lecturas al terminar la cuenta y fija el centro (entre 65° y 115°).
-- Un gesto cuenta si el ángulo se aleja del centro más que el umbral de sensibilidad (baja 38°, media 30°, alta 23°).
-- Para volver a contar hay que regresar a la zona neutral (55 % del umbral) y esperar 600 ms. Así se evitan los dobles conteos.
-- Pruebas: `tests/tilt-detector.test.mjs` (`npm test`).
-
-## Capa nativa (`js/services/native.js`)
-
-| Función | Android (plugin) | Web |
-| --- | --- | --- |
-| `lockLandscape` / `unlockOrientation` | `@capacitor/screen-orientation` | `screen.orientation.lock` |
-| `vibrate` | `@capacitor/haptics` | `navigator.vibrate` |
-| `keepAwake` / `allowSleep` | `@capacitor-community/keep-awake` | Wake Lock API |
-| `setImmersive` | `@capacitor/status-bar` | — |
-| `bindBackButton` | `@capacitor/app` | — |
-
-`MainActivity.java` pone la app en pantalla completa inmersiva.
+- `tilt-math.js` desenvuelve `gamma` con `beta` para obtener un ángulo continuo (~90 = neutral) y calcula el centro calibrado.
+- `tilt-detector.js` cuenta un gesto cuando el ángulo se aleja del centro más que el umbral de sensibilidad (baja 38°, media 30°, alta 23°). Para volver a contar hay que regresar a la zona neutral y esperar 600 ms.
+- `tilt-permission.js` pide el permiso (solo en iOS web) y comprueba que el sensor envíe lecturas.
+- `game-screen` empieza a leer el sensor durante la cuenta 3-2-1 y calibra al terminar.
 
 ## Mazos
 
-- Fuente: `scripts/decks-src/decks-{a,b,c}.mjs`. Cada mazo lista palabras fáciles, normales y difíciles separadas por `|`.
-- `npm run build:packs` genera `packs/*.json` y `packs/index.json`.
+- La fuente está en `scripts/decks-src/decks-{a,b,c}.mjs`. `npm run build:packs` genera `packs/*.json` y `packs/index.json`.
 - `npm run validate` revisa el esquema, los ids, los duplicados y las dificultades.
-- Categorías: `clasicos`, `entretenimiento`, `cultura-pop`, `mimica`.
 
 ## Compilación y release
 
-- `npm run build:web` copia la web a `www/` y `npx cap sync android` la pasa al proyecto Android.
-- `.github/workflows/android-release.yml`: con un tag `v*` compila `assembleRelease` y publica el APK en Releases.
-- `.github/workflows/ci.yml`: pruebas y APK de depuración en cada push.
-- `.github/workflows/pages.yml`: publica la versión web en GitHub Pages (manual).
+- `npm run build:web` copia la web a `www/` y genera `www/precache.json`, la lista que guarda el service worker.
+- `npx cap sync android` pasa `www/` al proyecto Android.
+- `.github/workflows/android-release.yml` compila y publica el APK firmado con cada tag `v*`.
+- `ci.yml` corre las pruebas, el límite de líneas y compila un APK de depuración.
+- `pages.yml` publica la versión web.

@@ -3,7 +3,8 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
 globalThis.window = new EventTarget();
-const { TiltDetector, landscapeTilt } = await import('../js/services/tilt-detector.js');
+const { TiltDetector } = await import('../js/services/sensors/tilt-detector.js');
+const { landscapeTilt } = await import('../js/services/sensors/tilt-math.js');
 
 /** Crea un detector con reloj controlado. */
 function setup(opts = {}) {

@@ -47,7 +47,7 @@ Es una app web sin frameworks (HTML, CSS y JavaScript con módulos ES y Web Comp
 
 ```sh
 npm install
-npm test               # pruebas del giroscopio + validación de mazos
+npm test               # pruebas + validación de mazos + límite de 800 líneas
 npm run build:web      # copia la web a www/
 npx serve www          # pruébala en el navegador
 npm run android:sync   # copia www/ al proyecto Android
@@ -56,11 +56,14 @@ npm run android:open   # abre Android Studio
 
 | Carpeta | Qué hay |
 | --- | --- |
-| `js/components/` | Pantallas: inicio, juego y resumen |
-| `js/services/` | Giroscopio, sonidos, reloj, almacenamiento y capa nativa (`native.js`) |
+| `js/components/` | Un componente por carpeta, con su lógica, plantilla y estilos por separado |
+| `js/services/` | Almacenamiento, giroscopio, capa nativa de Android, sonido |
+| `js/models/` | Lógica pura: cola de palabras, filtros, validación |
 | `packs/` | Mazos en JSON (generados desde `scripts/decks-src/`) |
 | `android/` | Proyecto Android de Capacitor |
 | `.github/workflows/` | CI, release del APK y publicación web |
+
+Reglas: un archivo por responsabilidad y **máximo 800 líneas por archivo** (`npm test` lo comprueba). El detalle está en [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ### Agregar o editar mazos
 
