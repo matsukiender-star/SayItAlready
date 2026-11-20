@@ -91,3 +91,9 @@ Los diálogos heredan de `components/shared/dialog-element.js`:
 - `.github/workflows/android-release.yml` compila y publica el APK firmado con cada tag `v*`.
 - `ci.yml` corre las pruebas, el límite de líneas y compila un APK de depuración.
 - `pages.yml` publica la versión web.
+
+## Documentación
+
+- `README.md`: presentación, descarga, instalación y guías.
+- `docs/wiki/`: fuente de la wiki. El workflow `wiki.yml` la publica junto con `ARCHITECTURE.md` (como Arquitectura), `CONTRIBUTING.md` (Contribuir) y `PRIVACY.md` (Privacidad). La página Mazos se genera desde `packs/` con `scripts/wiki/build-decks-page.mjs`.
+- `.github/ISSUE_TEMPLATE/`: plantillas para errores, ideas y mazos.

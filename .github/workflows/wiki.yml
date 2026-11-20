@@ -1,0 +1,61 @@
+name: Wiki
+
+# Publica docs/wiki/ (y ARCHITECTURE, CONTRIBUTING, PRIVACY) en la wiki de GitHub.
+# Requisito una sola vez: Settings → Features → Wikis activado y la primera
+# página creada desde la pestaña Wiki (el contenido se reemplaza).
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/wiki/**'
+      - 'packs/**'
+      - 'ARCHITECTURE.md'
+      - 'CONTRIBUTING.md'
+      - 'PRIVACY.md'
+      - 'scripts/wiki/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wiki
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Clonar la wiki
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if ! git clone "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.wiki.git" wiki-repo; then
+            echo "::error::La wiki todavía no existe. Actívala en Settings → Features → Wikis, crea la primera página desde la pestaña Wiki y vuelve a correr este workflow."
+            exit 1
+          fi
+
+      - name: Armar páginas
+        run: |
+          find wiki-repo -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          node scripts/wiki/assemble.mjs wiki-repo
+
+      - name: Publicar
+        working-directory: wiki-repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "La wiki ya estaba al día."
+            exit 0
+          fi
+          git commit -m "Wiki: ${GITHUB_SHA::7}"
+          git push

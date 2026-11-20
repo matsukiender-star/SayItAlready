@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c0a1d"/>
+      <stop offset="1" stop-color="#1d1540"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.12" cy="0.2" r="0.45">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.92" cy="0.95" r="0.5">
+      <stop offset="0" stop-color="#ff3d7f" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#ff3d7f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="icon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset="0.55" stop-color="#ff3d7f"/>
+      <stop offset="1" stop-color="#ff9a3d"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff3d7f"/>
+      <stop offset="1" stop-color="#ff7a45"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff3d7f"/>
+      <stop offset="1" stop-color="#ff9a3d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="400" rx="28" fill="url(#bg)"/>
+  <rect width="1280" height="400" rx="28" fill="url(#glowA)"/>
+  <rect width="1280" height="400" rx="28" fill="url(#glowB)"/>
+  <g transform="translate(110 70)">
+    <rect width="260" height="260" rx="58" fill="url(#icon)"/>
+    <g transform="translate(130 125) scale(0.5) rotate(-8)">
+      <rect x="-150" y="-118" width="300" height="214" rx="56" fill="#fff"/>
+      <path d="M-70 92 L-24 92 L-96 168 Z" fill="#fff"/>
+      <g fill="url(#ink)">
+        <rect x="-62" y="-14" width="34" height="88" rx="14"/>
+        <circle cx="-45" cy="-48" r="19"/>
+        <rect x="28" y="-86" width="34" height="88" rx="14"/>
+        <circle cx="45" cy="36" r="19"/>
+      </g>
+    </g>
+  </g>
+  <text x="430" y="200" font-family="Fredoka, 'Baloo 2', 'Trebuchet MS', 'Segoe UI', sans-serif" font-weight="700" font-size="112" fill="#f6f4ff">¡Dilo <tspan fill="url(#accent)">Ya!</tspan></text>
+  <text x="434" y="258" font-family="Inter, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="34" fill="#c9c3ee">El juego de adivinar con el teléfono en la frente</text>
+  <g font-family="Inter, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="22" fill="#f6f4ff">
+    <rect x="434" y="290" width="170" height="44" rx="22" fill="#ffffff" fill-opacity="0.1"/>
+    <text x="519" y="319" text-anchor="middle">26 mazos</text>
+    <rect x="618" y="290" width="190" height="44" rx="22" fill="#ffffff" fill-opacity="0.1"/>
+    <text x="713" y="319" text-anchor="middle">Giroscopio</text>
+    <rect x="822" y="290" width="150" height="44" rx="22" fill="#ffffff" fill-opacity="0.1"/>
+    <text x="897" y="319" text-anchor="middle">Android</text>
+    <rect x="986" y="290" width="150" height="44" rx="22" fill="#ffffff" fill-opacity="0.1"/>
+    <text x="1061" y="319" text-anchor="middle">Español</text>
+  </g>
+</svg>

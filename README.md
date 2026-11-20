@@ -1,92 +1,136 @@
-# ¡Dilo Ya! 📱
-
-El juego de adivinar palabras con el teléfono en la frente. Elige un mazo, ponte el celular en la frente y deja que tus amigos te den pistas. **Inclina hacia abajo si adivinaste y hacia arriba para pasar.**
-
-App de **Android** (APK) y versión web instalable, toda en español.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/readme/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset=".github/readme/banner-light.svg">
+    <img alt="¡Dilo Ya!, el juego de adivinar con el teléfono en la frente" src=".github/readme/banner-dark.svg" width="100%">
+  </picture>
+</p>
 
 <p align="center">
-  <img src="docs/screenshots/inicio.png" alt="Pantalla de inicio con los mazos" width="240">
-  &nbsp;
-  <img src="docs/screenshots/mazo.png" alt="Detalle de un mazo" width="240">
-  &nbsp;
-  <img src="docs/screenshots/resumen.png" alt="Resumen de la ronda" width="240">
+  <a href="https://github.com/matsukiender-star/SayItAlready/releases/latest"><b>Descargar</b></a> &nbsp;·&nbsp;
+  <a href="https://github.com/matsukiender-star/SayItAlready/wiki"><b>Wiki</b></a> &nbsp;·&nbsp;
+  <a href="https://github.com/matsukiender-star/SayItAlready/wiki/Como-jugar"><b>Cómo jugar</b></a> &nbsp;·&nbsp;
+  <a href="https://github.com/matsukiender-star/SayItAlready/issues/new/choose"><b>Pedir un cambio</b></a>
+</p>
+
+---
+
+¡Dilo Ya! es un juego de fiesta para adivinar palabras. Elige un mazo y ponte el teléfono en la frente con la pantalla hacia tus amigos. Ellos te dan pistas sin decir la palabra: **inclinas hacia abajo si adivinaste y hacia arriba para pasar**. Gana quien acierte más antes de que se acabe el tiempo.
+
+> [!NOTE]
+> Funciona sin internet, sin cuentas, sin anuncios y sin rastreo. Todo se queda en tu teléfono. Es un fork en español de [Say It Already!](https://github.com/david-risney/SayItAlready) de David Risney.
+
+<p align="center">
+  <img src=".github/readme/captura-inicio.png" alt="Pantalla de inicio con los mazos" width="24%">
+  <img src=".github/readme/captura-mazo.png" alt="Detalle de un mazo" width="24%">
+  <img src=".github/readme/captura-ajustes.png" alt="Ajustes" width="24%">
+  <img src=".github/readme/captura-resumen.png" alt="Resumen de la ronda" width="24%">
 </p>
 <p align="center">
-  <img src="docs/screenshots/juego.png" alt="Partida en horizontal" width="560">
+  <img src=".github/readme/captura-cuenta.png" alt="Cuenta regresiva antes de la ronda" width="49%">
+  <img src=".github/readme/captura-juego.png" alt="Partida en horizontal" width="49%">
 </p>
+
+## Funciones
+
+- **26 mazos en español:** más de 1,600 palabras en tres dificultades, de películas y series a dichos de la abuela. La lista completa está en [Mazos](#mazos).
+- **Giroscopio afinado:** se calibra solo con tu postura al terminar la cuenta 3-2-1, tiene sensibilidad baja, media o alta, y no cuenta dos veces el mismo gesto.
+- **Otros controles:** deslizar en la pantalla, tocar botones o usar el teclado (Espacio, Enter y Esc). Si el teléfono no tiene giroscopio, cambia solo a botones.
+- **Dificultad que se adapta:** si pasas una palabra, la siguiente es más fácil; si aciertas dos seguidas, sube el reto.
+- **Animaciones:** tarjetas 3D, cuenta regresiva, destellos y partículas en cada acierto, y confeti en el resumen.
+- **Tus propios mazos:** créalos con ícono, colores y dificultad por palabra, y compártelos con un código QR o en JSON.
+- **Hecha para la frente:** pantalla completa, horizontal, siempre encendida y con vibración en cada acierto.
+
+## Mazos
+
+| Categoría | Mazos |
+| --- | --- |
+| 🧩 Clásicos | Animales · Objetos de la casa · Comida · Profesiones · Países y ciudades · Deportes · Instrumentos musicales · Transportes · Partes del cuerpo |
+| 🎬 Entretenimiento | Películas · Pelis animadas · Series y novelas · Superhéroes y villanos · Caricaturas · Anime · Sagas épicas · Videojuegos · Pokémon · Personajes Nintendo |
+| 🔥 Cultura pop | Famosos · Música y cantantes · Comida rápida y marcas · Memes e internet · Dichos y refranes · Los años 2000 |
+| 🎭 Mímica | Acciones para actuar sin hablar |
+
+Cada mazo trae ejemplos en la wiki: [Mazos](https://github.com/matsukiender-star/SayItAlready/wiki/Mazos).
 
 ## Descargar
 
-Descarga el APK más reciente desde **[Releases](../../releases/latest)** y ábrelo en tu teléfono. Si Android lo pide, permite «Instalar apps desconocidas». Requiere Android 7.0 o superior.
+Para Android 7.0 o superior. Descarga el archivo `DiloYa-vX.Y.Z.apk` de la [última versión](https://github.com/matsukiender-star/SayItAlready/releases/latest). Cada versión trae también un archivo `.sha256` para comprobar que la descarga está completa.
 
-## Qué trae
+También hay una versión web que se instala desde el navegador en cualquier teléfono. Necesita activarse una vez en GitHub Pages; los pasos están en [Publicar versiones](https://github.com/matsukiender-star/SayItAlready/wiki/Publicar-versiones).
 
-- **26 mazos en español** con más de 1,600 palabras en tres dificultades:
-  - **Clásicos:** Animales, Objetos de la casa, Comida, Profesiones, Países y ciudades, Deportes, Instrumentos, Transportes, Partes del cuerpo
-  - **Entretenimiento:** Películas, Pelis animadas, Series y novelas, Superhéroes, Caricaturas, Anime, Sagas épicas, Videojuegos, Pokémon, Personajes Nintendo
-  - **Cultura pop:** Famosos, Música y cantantes, Marcas, Memes e internet, Dichos y refranes, Los años 2000
-  - **Mímica:** acciones para actuar sin hablar
-- **Giroscopio afinado:** se calibra solo con tu postura al terminar la cuenta 3‑2‑1, tiene sensibilidad ajustable (baja/media/alta) y no cuenta dos veces el mismo gesto.
-- También se juega **deslizando**, con **botones** en pantalla o con el **teclado** (Espacio = acierto, Enter = pasar, Esc = pausa).
-- Interfaz nueva con animaciones: tarjetas 3D, cuenta regresiva, destellos de acierto y pase, partículas, confeti y resumen con puntuación animada.
-- Dificultad adaptativa: si pasas una palabra, la siguiente es más fácil; si aciertas dos seguidas, sube el reto.
-- Crea tus propios mazos y compártelos con código QR o JSON.
-- Funciona sin internet. Sin cuentas, sin anuncios y sin rastreo.
+## Instalar
 
-## Cómo jugar
+¡Dilo Ya! no se vende en tiendas de apps, por eso Android pide un permiso extra la primera vez.
 
-1. Elige un mazo (o toca **¡Sorpréndeme!**).
-2. Ponte el teléfono en la frente con la pantalla hacia tus amigos.
-3. Ellos describen la palabra sin decirla: pueden actuar, cantar o hacer sonidos.
-4. **Inclina hacia abajo** si adivinaste ✅ o **hacia arriba** para pasar ⏭.
-5. Al acabarse el tiempo verás cuántas acertaste.
+### Android
 
-## Desarrollo
+1. Descarga el `.apk` en tu teléfono desde la [última versión](https://github.com/matsukiender-star/SayItAlready/releases/latest).
+2. Ábrelo. Android pide permitir la instalación de apps desde tu navegador o tu administrador de archivos. Permítelo esta vez.
+3. Pulsa **Instalar** y abre **¡Dilo Ya!**.
 
-Es una app web sin frameworks (HTML, CSS y JavaScript con módulos ES y Web Components) empaquetada para Android con [Capacitor](https://capacitorjs.com/).
-
-```sh
-npm install
-npm test               # pruebas + validación de mazos + límite de 800 líneas
-npm run build:web      # copia la web a www/
-npx serve www          # pruébala en el navegador
-npm run android:sync   # copia www/ al proyecto Android
-npm run android:open   # abre Android Studio
-```
-
-| Carpeta | Qué hay |
-| --- | --- |
-| `js/components/` | Un componente por carpeta, con su lógica, plantilla y estilos por separado |
-| `js/services/` | Almacenamiento, giroscopio, capa nativa de Android, sonido |
-| `js/models/` | Lógica pura: cola de palabras, filtros, validación |
-| `packs/` | Mazos en JSON (generados desde `scripts/decks-src/`) |
-| `android/` | Proyecto Android de Capacitor |
-| `.github/workflows/` | CI, release del APK y publicación web |
-
-Reglas: un archivo por responsabilidad y **máximo 800 líneas por archivo** (`npm test` lo comprueba). El detalle está en [ARCHITECTURE.md](ARCHITECTURE.md).
-
-### Agregar o editar mazos
-
-Edita `scripts/decks-src/decks-*.mjs` y ejecuta:
-
-```sh
-npm run build:packs && npm run validate
-```
-
-### Publicar una versión
-
-1. Sube la versión en `package.json`, `js/version.js`, `sw.js` y `android/app/build.gradle` (`versionCode` y `versionName`).
-2. Crea y sube un tag: `git tag v2.0.1 && git push origin v2.0.1`.
-3. GitHub Actions compila el APK firmado y lo publica en Releases.
-
-La firma usa un keystore de desarrollo incluido en el repo. Para Google Play, configura tu propio keystore: lee [android/keystore/README.md](android/keystore/README.md).
+Si Play Protect avisa que la app es desconocida, pulsa **Más detalles** y luego **Instalar de todas formas**. El aviso aparece porque la app no viene de Google Play.
 
 ### Versión web
 
-El workflow **Web · GitHub Pages** publica la versión web. Actívalo en *Settings → Pages → Source: GitHub Actions* y luego ejecútalo desde la pestaña *Actions*.
+1. Abre la página de la versión web en Chrome.
+2. Pulsa el menú ⋮ y luego **Agregar a la pantalla principal** o **Instalar app**.
 
-## Créditos y licencia
+### Actualizar
 
-Fork de [Say It Already!](https://github.com/david-risney/SayItAlready) de David Risney, rediseñado y traducido al español. Licencia [MIT](LICENSE). Tipografías Fredoka e Inter con licencia SIL OFL.
+| Dónde | Cómo |
+| --- | --- |
+| Android | Descarga el `.apk` nuevo e instálalo encima. Tus mazos, favoritos y ajustes se conservan. |
+| Web | Abre **⚙️ Ajustes**. Si hay versión nueva aparece **actualizar**; púlsalo. |
 
-Privacidad: todo se queda en tu teléfono. Lee [PRIVACY.md](PRIVACY.md).
+Más detalles y solución de problemas en [Instalación](https://github.com/matsukiender-star/SayItAlready/wiki/Instalacion).
+
+## Cómo jugar
+
+1. Elige un mazo, o pulsa **¡Sorpréndeme!** para uno al azar.
+2. Escoge la dificultad y pulsa **¡Jugar!**.
+3. Ponte el teléfono en la frente, en horizontal, con la pantalla hacia tus amigos.
+4. Ellos describen, actúan o cantan la palabra sin decirla.
+5. **Inclina hacia abajo** ✅ si adivinaste o **hacia arriba** ⏭ para pasar.
+6. Al acabarse el tiempo verás tus aciertos y la lista de palabras.
+
+## Guías
+
+| Guía | De qué trata |
+| --- | --- |
+| [Cómo jugar](https://github.com/matsukiender-star/SayItAlready/wiki/Como-jugar) | Reglas, variantes para grupos y dificultad adaptativa |
+| [Controles y giroscopio](https://github.com/matsukiender-star/SayItAlready/wiki/Controles-y-giroscopio) | Calibración, sensibilidad, deslizar, botones y teclado |
+| [Ajustes](https://github.com/matsukiender-star/SayItAlready/wiki/Ajustes) | Cada opción de ⚙️ Ajustes |
+| [Crear y compartir mazos](https://github.com/matsukiender-star/SayItAlready/wiki/Crear-y-compartir-mazos) | Editor, formato JSON y códigos QR |
+| [Preguntas frecuentes](https://github.com/matsukiender-star/SayItAlready/wiki/Preguntas-frecuentes) | Problemas comunes y cómo resolverlos |
+| [Desarrollo](https://github.com/matsukiender-star/SayItAlready/wiki/Desarrollo) | Compilar, probar y agregar mazos al código |
+| [Arquitectura](https://github.com/matsukiender-star/SayItAlready/wiki/Arquitectura) | Cómo está organizado el código |
+| [Publicar versiones](https://github.com/matsukiender-star/SayItAlready/wiki/Publicar-versiones) | Release del APK, firma y versión web |
+
+Las páginas de la wiki salen de la carpeta [`docs/wiki`](docs/wiki), así que también se pueden leer desde el código.
+
+## Compilar
+
+Necesitas Node.js 22. Para compilar el APK también necesitas JDK 21 y el Android SDK, o puedes dejar que lo compile GitHub Actions.
+
+```bash
+npm install
+npm test                 # pruebas, validación de mazos y límite de 800 líneas por archivo
+npm run build:web        # copia la web a www/
+npx serve www            # pruébala en http://localhost:3000
+npm run android:sync     # pasa www/ al proyecto Android
+cd android && ./gradlew assembleDebug   # APK de depuración
+```
+
+Cada cambio en GitHub corre las pruebas y compila un APK de depuración. Cada tag `v*` publica un Release con el APK firmado.
+
+## Contribuir
+
+¿Encontraste un error o quieres un mazo nuevo? [Abre un issue](https://github.com/matsukiender-star/SayItAlready/issues/new/choose): hay plantillas para errores, ideas y mazos. Antes de mandar código, lee la [guía para contribuir](CONTRIBUTING.md). Para reportar un problema de seguridad, lee la [política de seguridad](SECURITY.md).
+
+## Privacidad
+
+Todo se queda en tu dispositivo. La app no tiene analíticas, rastreo ni publicidad. El giroscopio solo se lee durante la partida y sus datos no se guardan. Más detalles en [PRIVACY.md](PRIVACY.md).
+
+## Licencia
+
+¡Dilo Ya! es software libre con [licencia MIT](LICENSE), basado en [Say It Already!](https://github.com/david-risney/SayItAlready) de David Risney. Las tipografías Fredoka e Inter usan la licencia SIL Open Font License.

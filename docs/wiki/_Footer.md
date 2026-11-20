@@ -1,0 +1,1 @@
+¡Dilo Ya! · Licencia MIT · Basado en [Say It Already!](https://github.com/david-risney/SayItAlready) · ¿Algo mal en esta página? [Edita `docs/wiki`](https://github.com/matsukiender-star/SayItAlready/tree/main/docs/wiki) o [abre un issue](https://github.com/matsukiender-star/SayItAlready/issues/new/choose).

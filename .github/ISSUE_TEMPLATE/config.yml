@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 📖 Wiki de ¡Dilo Ya!
+    url: https://github.com/matsukiender-star/SayItAlready/wiki
+    about: Instalación, cómo jugar, controles y preguntas frecuentes.
+  - name: 📱 Descargar la última versión
+    url: https://github.com/matsukiender-star/SayItAlready/releases/latest
+    about: El APK más reciente para Android.

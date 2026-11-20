@@ -1,0 +1,50 @@
+name: 🃏 Mazo nuevo o palabras
+description: Propón un mazo nuevo, agrega palabras o corrige alguna.
+title: "[Mazo] "
+labels: ["mazos"]
+body:
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: ¿Qué propones?
+      options:
+        - Un mazo nuevo
+        - Agregar palabras a un mazo
+        - Corregir o quitar palabras
+    validations:
+      required: true
+  - type: input
+    id: mazo
+    attributes:
+      label: Mazo
+      placeholder: Películas, o el nombre del mazo nuevo
+    validations:
+      required: true
+  - type: textarea
+    id: faciles
+    attributes:
+      label: Palabras fáciles
+      description: Una por línea. Las conoce casi todo el mundo.
+  - type: textarea
+    id: normales
+    attributes:
+      label: Palabras normales
+      description: Una por línea. Las conoce quien sabe algo del tema.
+  - type: textarea
+    id: dificiles
+    attributes:
+      label: Palabras difíciles
+      description: Una por línea. Solo para expertos.
+  - type: textarea
+    id: json
+    attributes:
+      label: JSON del mazo (opcional)
+      description: Si lo hiciste en la app, cópialo desde la pestaña JSON del editor.
+      render: json
+  - type: checkboxes
+    id: reglas
+    attributes:
+      label: Antes de enviar
+      options:
+        - label: Las palabras no son ofensivas y se entienden en Latinoamérica.
+          required: true
